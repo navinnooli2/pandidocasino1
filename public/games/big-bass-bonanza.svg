@@ -1,0 +1,15 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f4c75;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3282b8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bassGrad)"/>
+  <ellipse cx="200" cy="150" rx="100" ry="50" fill="#ffd700" opacity="0.8"/>
+  <circle cx="180" cy="140" r="8" fill="#333"/>
+  <circle cx="220" cy="140" r="8" fill="#333"/>
+  <path d="M 200 150 Q 200 170 190 180" stroke="#333" stroke-width="3" fill="none"/>
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">BIG BASS BONANZA</text>
+</svg>
+

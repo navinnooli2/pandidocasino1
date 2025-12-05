@@ -1,0 +1,17 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pokerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d2d2d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#pokerGrad)"/>
+  <rect x="120" y="100" width="50" height="70" rx="5" fill="#fff" opacity="0.9"/>
+  <rect x="180" y="100" width="50" height="70" rx="5" fill="#fff" opacity="0.9"/>
+  <rect x="240" y="100" width="50" height="70" rx="5" fill="#fff" opacity="0.9"/>
+  <text x="145" y="145" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#c0392b" text-anchor="middle">A</text>
+  <text x="205" y="145" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#c0392b" text-anchor="middle">K</text>
+  <text x="265" y="145" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1a1a1a" text-anchor="middle">Q</text>
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">LIVE POKER</text>
+</svg>
+

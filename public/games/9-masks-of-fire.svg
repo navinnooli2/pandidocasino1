@@ -1,0 +1,15 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="maskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#maskGrad)"/>
+  <circle cx="200" cy="150" r="70" fill="#ffd700" opacity="0.3"/>
+  <path d="M 150 120 Q 200 100 250 120 Q 250 180 200 200 Q 150 180 150 120" fill="#ff6b6b" opacity="0.8"/>
+  <circle cx="185" cy="150" r="12" fill="#1a1a2e"/>
+  <circle cx="215" cy="150" r="12" fill="#1a1a2e"/>
+  <text x="200" y="260" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="white" text-anchor="middle">9 MASKS OF FIRE</text>
+</svg>
+

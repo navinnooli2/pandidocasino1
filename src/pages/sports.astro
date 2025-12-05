@@ -8,220 +8,225 @@ import { CASINO_CONFIG } from '../consts';
 
 <!doctype html>
 <html lang="fr">
-	<head>
-		<BaseHead 
-			title={`Sportsbook - Paris Sportifs en Ligne - ${CASINO_CONFIG.name}`} 
-			description={`Parier sur le sport avec ${CASINO_CONFIG.name}. Couverture complète des événements sportifs mondiaux, cotes compétitives, paris en direct et règlements instantanés.`} 
-		/>
-	</head>
-	<body>
-		<Header />
-		<PageLayout />
-		<main>
-			<section class="page-hero">
-				<div class="container">
-					<h1>Sportsbook - Là où les Champions Parient</h1>
-					<p class="hero-subtitle">
-						Bienvenue dans l'arène où la connaissance sportive rencontre le potentiel de gain. Chez {CASINO_CONFIG.name} Sportsbook, nous offrons une couverture complète des événements sportifs mondiaux avec des cotes compétitives, des paris en direct et des règlements instantanés. Que vous souteniez votre équipe favorite ou que vous recherchiez de la valeur sur des marchés de niche, nous vous couvrons.
-					</p>
-				</div>
-			</section>
+  <head>
+    <BaseHead 
+      title={`Sportsbook - Paris Sportifs en Ligne - ${CASINO_CONFIG.name}`} 
+      description={`Parier sur le sport avec ${CASINO_CONFIG.name}. Couverture complète des événements sportifs mondiaux, cotes compétitives, paris en direct et règlements instantanés.`} 
+    />
+  </head>
+  <body>
+    <Header />
+    <PageLayout />
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Sportsbook - Là où les Champions Parient</h1>
+          <p class="hero-subtitle">
+            Bienvenue dans l'arène où la connaissance sportive rencontre le potentiel de gain. Chez {CASINO_CONFIG.name} Sportsbook, nous offrons une couverture complète des événements sportifs mondiaux avec des cotes compétitives, des paris en direct et des règlements instantanés. Que vous souteniez votre équipe favorite ou que vous recherchiez de la valeur sur des marchés de niche, nous vous couvrons.
+          </p>
+        </div>
+      </section>
 
-			<section class="content-section">
-				<div class="container">
-					<h2>Matchs du Jour en Vedette</h2>
-					
-					<div class="game-grid">
-						<div class="game-card">
-							<div class="game-image">PREMIER LEAGUE • EN DIRECT<br/>67' - 2:1</div>
-							<h3>Manchester United vs Liverpool</h3>
-							<p><strong>Manchester United</strong> 2.15</p>
-							<p><strong>Match nul</strong> 3.40</p>
-							<p><strong>Liverpool</strong> 2.85</p>
-							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Parier</a>
-						</div>
+      <section class="content-section">
+        <div class="container">
+          <h2>Matchs du Jour en Vedette</h2>
+          
+          <div class="game-grid">
+            <div class="game-card">
+              <div class="game-image">
+                PREMIER LEAGUE • EN DIRECT<br/>67' - 2:1
+              </div>
+              <h3>Manchester United vs Liverpool</h3>
+              <p><strong>Manchester United</strong> 2.15</p>
+              <p><strong>Match nul</strong> 3.40</p>
+              <p><strong>Liverpool</strong> 2.85</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Parier</a>
+            </div>
 
-						<div class="game-card">
-							<div class="game-image">LA LIGA • Aujourd'hui 20:00</div>
-							<h3>Real Madrid vs Barcelona</h3>
-							<p><strong>Real Madrid</strong> 1.65</p>
-							<p><strong>Match nul</strong> 3.80</p>
-							<p><strong>Barcelona</strong> 4.50</p>
-							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Parier</a>
-						</div>
+            <div class="game-card">
+              <div class="game-image">LA LIGA • Aujourd'hui 20:00</div>
+              <h3>Real Madrid vs Barcelona</h3>
+              <p><strong>Real Madrid</strong> 1.65</p>
+              <p><strong>Match nul</strong> 3.80</p>
+              <p><strong>Barcelona</strong> 4.50</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Parier</a>
+            </div>
 
-						<div class="game-card">
-							<div class="game-image">NBA • Aujourd'hui 01:30</div>
-							<h3>LA Lakers vs Boston Celtics</h3>
-							<p><strong>LA Lakers</strong> 1.85</p>
-							<p><strong>Boston Celtics</strong> 1.95</p>
-							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Parier</a>
-						</div>
+            <div class="game-card">
+              <div class="game-image">NBA • Aujourd'hui 01:30</div>
+              <h3>LA Lakers vs Boston Celtics</h3>
+              <p><strong>LA Lakers</strong> 1.85</p>
+              <p><strong>Boston Celtics</strong> 1.95</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Parier</a>
+            </div>
 
-						<div class="game-card">
-							<div class="game-image">TENNIS • ATP FINALS • EN DIRECT<br/>Set 2 - 4:3</div>
-							<h3>Novak Djokovic vs Carlos Alcaraz</h3>
-							<p><strong>Novak Djokovic</strong> 1.45</p>
-							<p><strong>Carlos Alcaraz</strong> 2.75</p>
-							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Parier</a>
-						</div>
-					</div>
-				</div>
-			</section>
+            <div class="game-card">
+              <div class="game-image">
+                TENNIS • ATP FINALS • EN DIRECT<br/>Set 2 - 4:3
+              </div>
+              <h3>Novak Djokovic vs Carlos Alcaraz</h3>
+              <p><strong>Novak Djokovic</strong> 1.45</p>
+              <p><strong>Carlos Alcaraz</strong> 2.75</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Parier</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<section class="content-section">
-				<div class="container">
-					<h2>Couverture Sportive</h2>
+      <section class="content-section">
+        <div class="container">
+          <h2>Couverture Sportive</h2>
 
-					<h3>Football</h3>
-					<p>
-						Le beau jeu est au centre de la scène avec une couverture de chaque ligue majeure et tournoi. De la Premier League à la Ligue des Champions, des qualifications de la Coupe du Monde aux derbys locaux, nous offrons des centaines de marchés par match.
-					</p>
-					<p><strong>Marchés Populaires :</strong></p>
-					<ul>
-						<li>Résultat du Match (1X2)</li>
-						<li>Les Deux Équipes Marquent</li>
-						<li>Plus/Moins de Buts</li>
-						<li>Score Exact</li>
-						<li>Premier Buteur</li>
-						<li>Mi-Temps/Résultat Final</li>
-					</ul>
+          <h3>Football</h3>
+          <p>
+            Le beau jeu est au centre de la scène avec une couverture de chaque ligue majeure et tournoi. De la Premier League à la Ligue des Champions, des qualifications de la Coupe du Monde aux derbys locaux, nous offrons des centaines de marchés par match.
+          </p>
+          <p><strong>Marchés Populaires :</strong></p>
+          <ul>
+            <li>Résultat du Match (1X2)</li>
+            <li>Les Deux Équipes Marquent</li>
+            <li>Plus/Moins de Buts</li>
+            <li>Score Exact</li>
+            <li>Premier Buteur</li>
+            <li>Mi-Temps/Résultat Final</li>
+          </ul>
 
-					<h3>Tennis</h3>
-					<p>
-						Parier sur chaque service, chaque set et chaque match des Grands Chelems aux événements ATP/WTA. Les paris en direct avec des mises à jour point par point vous maintiennent dans l'action.
-					</p>
+          <h3>Tennis</h3>
+          <p>
+            Parier sur chaque service, chaque set et chaque match des Grands Chelems aux événements ATP/WTA. Les paris en direct avec des mises à jour point par point vous maintiennent dans l'action.
+          </p>
 
-					<h3>Basketball</h3>
-					<p>
-						NBA, EuroLeague et compétitions internationales couvertes avec des marchés étendus incluant les écarts de points, les totaux et les paris sur les joueurs.
-					</p>
+          <h3>Basketball</h3>
+          <p>
+            NBA, EuroLeague et compétitions internationales couvertes avec des marchés étendus incluant les écarts de points, les totaux et les paris sur les joueurs.
+          </p>
 
-					<h3>Autres Sports</h3>
-					<ul>
-						<li><strong>Hockey sur Glace</strong> - NHL, KHL et ligues européennes</li>
-						<li><strong>Cricket</strong> - Matchs de test, ODI, ligues T20</li>
-						<li><strong>Rugby</strong> - Union et League</li>
-						<li><strong>MMA/Boxe</strong> - Soirées de combat majeures et PPV</li>
-						<li><strong>Esports</strong> - CS:GO, Dota 2, League of Legends</li>
-					</ul>
-				</div>
-			</section>
+          <h3>Autres Sports</h3>
+          <ul>
+            <li><strong>Hockey sur Glace</strong> - NHL, KHL et ligues européennes</li>
+            <li><strong>Cricket</strong> - Matchs de test, ODI, ligues T20</li>
+            <li><strong>Rugby</strong> - Union et League</li>
+            <li><strong>MMA/Boxe</strong> - Soirées de combat majeures et PPV</li>
+            <li><strong>Esports</strong> - CS:GO, Dota 2, League of Legends</li>
+          </ul>
+        </div>
+      </section>
 
-			<section class="content-section">
-				<div class="container">
-					<h2>Vue d'Ensemble des Marchés de Paris</h2>
-					<div class="table-container">
-						<table>
-							<thead>
-								<tr>
-									<th>Sport</th>
-									<th>Événements/Mois</th>
-									<th>Marchés par Événement</th>
-									<th>Paris en Direct</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Football</td>
-									<td>15,000+</td>
-									<td>200+</td>
-									<td>Oui</td>
-								</tr>
-								<tr>
-									<td>Tennis</td>
-									<td>2,500+</td>
-									<td>80+</td>
-									<td>Oui</td>
-								</tr>
-								<tr>
-									<td>Basketball</td>
-									<td>3,000+</td>
-									<td>150+</td>
-									<td>Oui</td>
-								</tr>
-								<tr>
-									<td>Hockey sur Glace</td>
-									<td>1,200+</td>
-									<td>120+</td>
-									<td>Oui</td>
-								</tr>
-								<tr>
-									<td>Cricket</td>
-									<td>800+</td>
-									<td>100+</td>
-									<td>Oui</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</section>
+      <section class="content-section">
+        <div class="container">
+          <h2>Vue d'Ensemble des Marchés de Paris</h2>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Sport</th>
+                  <th>Événements/Mois</th>
+                  <th>Marchés par Événement</th>
+                  <th>Paris en Direct</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Football</td>
+                  <td>15,000+</td>
+                  <td>200+</td>
+                  <td>Oui</td>
+                </tr>
+                <tr>
+                  <td>Tennis</td>
+                  <td>2,500+</td>
+                  <td>80+</td>
+                  <td>Oui</td>
+                </tr>
+                <tr>
+                  <td>Basketball</td>
+                  <td>3,000+</td>
+                  <td>150+</td>
+                  <td>Oui</td>
+                </tr>
+                <tr>
+                  <td>Hockey sur Glace</td>
+                  <td>1,200+</td>
+                  <td>120+</td>
+                  <td>Oui</td>
+                </tr>
+                <tr>
+                  <td>Cricket</td>
+                  <td>800+</td>
+                  <td>100+</td>
+                  <td>Oui</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
 
-			<section class="content-section">
-				<div class="container">
-					<h2>Paris en Direct</h2>
-					<p>
-						Regardez les cotes changer en temps réel pendant que l'action se déroule. Notre plateforme de paris en direct offre des mises à jour instantanées, des cotes dynamiques et des options de cash-out qui vous permettent de sécuriser les profits ou de minimiser les pertes avant le coup de sifflet final.
-					</p>
+      <section class="content-section">
+        <div class="container">
+          <h2>Paris en Direct</h2>
+          <p>
+            Regardez les cotes changer en temps réel pendant que l'action se déroule. Notre plateforme de paris en direct offre des mises à jour instantanées, des cotes dynamiques et des options de cash-out qui vous permettent de sécuriser les profits ou de minimiser les pertes avant le coup de sifflet final.
+          </p>
 
-					<h3>Fonctionnalités en Direct :</h3>
-					<ul>
-						<li>Mises à jour de cotes en temps réel</li>
-						<li>Statistiques et suivi de match en direct</li>
-						<li>Cash-out partiel disponible</li>
-						<li>Diffusion en direct pour les événements sélectionnés</li>
-						<li>Bulletin de pari rapide pour des paris rapides</li>
-					</ul>
-				</div>
-			</section>
+          <h3>Fonctionnalités en Direct :</h3>
+          <ul>
+            <li>Mises à jour de cotes en temps réel</li>
+            <li>Statistiques et suivi de match en direct</li>
+            <li>Cash-out partiel disponible</li>
+            <li>Diffusion en direct pour les événements sélectionnés</li>
+            <li>Bulletin de pari rapide pour des paris rapides</li>
+          </ul>
+        </div>
+      </section>
 
-			<section class="content-section">
-				<div class="container">
-					<h2>Constructeur de Paris</h2>
-					<p>
-						Créez des paris personnalisés en combinant plusieurs sélections du même match. Vous voulez parier sur une victoire à domicile, plus de 2.5 buts et les deux équipes marquent ? Construisez-le vous-même et obtenez des cotes améliorées pour votre prédiction unique.
-					</p>
+      <section class="content-section">
+        <div class="container">
+          <h2>Constructeur de Paris</h2>
+          <p>
+            Créez des paris personnalisés en combinant plusieurs sélections du même match. Vous voulez parier sur une victoire à domicile, plus de 2.5 buts et les deux équipes marquent ? Construisez-le vous-même et obtenez des cotes améliorées pour votre prédiction unique.
+          </p>
 
-					<h3>Boosts d'Accumulateurs</h3>
-					<p>
-						Empilez vos sélections pour des retours plus importants. Nous offrons une assurance accumulateur et des cotes améliorées sur les paris multi-sélections :
-					</p>
-					<ul>
-						<li>Acca 4 sélections - 5% de bonus sur les gains</li>
-						<li>Acca 5 sélections - 10% de bonus sur les gains</li>
-						<li>Acca 6+ sélections - 15% de bonus sur les gains</li>
-					</ul>
-				</div>
-			</section>
+          <h3>Boosts d'Accumulateurs</h3>
+          <p>
+            Empilez vos sélections pour des retours plus importants. Nous offrons une assurance accumulateur et des cotes améliorées sur les paris multi-sélections :
+          </p>
+          <ul>
+            <li>Acca 4 sélections - 5% de bonus sur les gains</li>
+            <li>Acca 5 sélections - 10% de bonus sur les gains</li>
+            <li>Acca 6+ sélections - 15% de bonus sur les gains</li>
+          </ul>
+        </div>
+      </section>
 
-			<section class="content-section">
-				<div class="container">
-					<h2>Conseils de Paris</h2>
-					<p>
-						Recherchez la forme, les records tête-à-tête et les nouvelles de l'équipe avant de placer des paris. Spécialisez-vous dans des ligues ou sports spécifiques où vous avez une connaissance réelle. Évitez de rattraper les pertes avec des paris impulsifs, et ne misez jamais plus que ce que vous pouvez vous permettre de perdre. Le pari de valeur - trouver des cotes qui ne reflètent pas la vraie probabilité - est la clé du succès à long terme.
-					</p>
-				</div>
-			</section>
+      <section class="content-section">
+        <div class="container">
+          <h2>Conseils de Paris</h2>
+          <p>
+            Recherchez la forme, les records tête-à-tête et les nouvelles de l'équipe avant de placer des paris. Spécialisez-vous dans des ligues ou sports spécifiques où vous avez une connaissance réelle. Évitez de rattraper les pertes avec des paris impulsifs, et ne misez jamais plus que ce que vous pouvez vous permettre de perdre. Le pari de valeur - trouver des cotes qui ne reflètent pas la vraie probabilité - est la clé du succès à long terme.
+          </p>
+        </div>
+      </section>
 
-			<section class="content-section">
-				<div class="container">
-					<h2>Paris Mobiles</h2>
-					<p>
-						Placez des paris en déplacement avec notre plateforme mobile entièrement optimisée. Accédez aux paris en direct, vérifiez les résultats et gérez votre compte depuis n'importe quel appareil. Les dépôts rapides et les retraits instantanés signifient que vous êtes toujours prêt pour le prochain grand match.
-					</p>
-				</div>
-			</section>
+      <section class="content-section">
+        <div class="container">
+          <h2>Paris Mobiles</h2>
+          <p>
+            Placez des paris en déplacement avec notre plateforme mobile entièrement optimisée. Accédez aux paris en direct, vérifiez les résultats et gérez votre compte depuis n'importe quel appareil. Les dépôts rapides et les retraits instantanés signifient que vous êtes toujours prêt pour le prochain grand match.
+          </p>
+        </div>
+      </section>
 
-			<section class="cta-section">
-				<div class="container">
-					<h2>Commencez à parier chez {CASINO_CONFIG.name} Sportsbook</h2>
-					<p>Transformez votre connaissance sportive en opportunités de gain avec des cotes compétitives et une couverture complète des marchés.</p>
-					<a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Commencer à Parier</a>
-				</div>
-			</section>
-		</main>
-		<Footer />
-	</body>
+      <section class="cta-section">
+        <div class="container">
+          <h2>Commencez à parier chez {CASINO_CONFIG.name} Sportsbook</h2>
+          <p>
+            Transformez votre connaissance sportive en opportunités de gain avec des cotes compétitives et une couverture complète des marchés.
+          </p>
+          <a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Commencer à Parier</a>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
-
