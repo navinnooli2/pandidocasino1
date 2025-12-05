@@ -1,0 +1,262 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PageLayout from '../../components/PageLayout.astro';
+import { CASINO_CONFIG } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead 
+      title={`Online Slots - ${CASINO_CONFIG.stats.slots} Games - ${CASINO_CONFIG.name}`} 
+      description={`Play over ${CASINO_CONFIG.stats.slots} online slots at ${CASINO_CONFIG.name}. Megaways, Cluster Pays, progressive jackpots and more.`}
+      currentLang="en"
+    />
+  </head>
+  <body>
+    <Header currentLang="en" />
+    <div class="home-link">
+      <a href="/en/">Pandido Casino</a>
+    </div>
+    <PageLayout />
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Slots - {CASINO_CONFIG.stats.slots} Games Available</h1>
+          <p class="hero-subtitle">
+            Dive into our massive collection of online slots with over {CASINO_CONFIG.stats.slots} titles from the world's best developers. From timeless classics to revolutionary innovations, find your perfect slot at {CASINO_CONFIG.name}.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Best Slots</h2>
+          
+          <div class="game-grid">
+            <div class="game-card">
+              <div class="game-image">Big Bass Bonanza</div>
+              <h3>Big Bass Bonanza</h3>
+              <p>RTP: 96.71% | Volatility: High</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Play Now</a>
+            </div>
+
+            <div class="game-card">
+              <div class="game-image">King Kong Cash</div>
+              <h3>King Kong Cash</h3>
+              <p>RTP: 96.50% | Volatility: High</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Play Now</a>
+            </div>
+
+            <div class="game-card">
+              <div class="game-image">9 Masks Of Fire</div>
+              <h3>9 Masks Of Fire</h3>
+              <p>RTP: 96.20% | Volatility: Medium</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Play Now</a>
+            </div>
+
+            <div class="game-card">
+              <div class="game-image">Big Bass Boxing</div>
+              <h3>Big Bass Boxing</h3>
+              <p>RTP: 96.80% | Volatility: High</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Play Now</a>
+            </div>
+
+            <div class="game-card">
+              <div class="game-image">Razor Shark</div>
+              <h3>Razor Shark</h3>
+              <p>RTP: 96.70% | Volatility: High</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Play Now</a>
+            </div>
+
+            <div class="game-card">
+              <div class="game-image">Book of Dead</div>
+              <h3>Book of Dead</h3>
+              <p>RTP: 96.21% | Volatility: High</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Play Now</a>
+            </div>
+
+            <div class="game-card">
+              <div class="game-image">Gates of Olympus</div>
+              <h3>Gates of Olympus</h3>
+              <p>RTP: 96.50% | Volatility: High</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Play Now</a>
+            </div>
+
+            <div class="game-card">
+              <div class="game-image">Sweet Bonanza</div>
+              <h3>Sweet Bonanza</h3>
+              <p>RTP: 96.48% | Volatility: High</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Play Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Types of Slots</h2>
+
+          <h3>Megaways</h3>
+          <p>
+            Over 100+ Megaways slots with up to 117,649 ways to win. These revolutionary games offer dynamic gameplay mechanics where the number of ways to win changes on every spin.
+          </p>
+
+          <h3>Cluster Pays</h3>
+          <p>
+            Over 100+ Cluster Pays slots with up to 500 ways to win. Win by forming clusters of adjacent symbols instead of traditional paylines.
+          </p>
+
+          <h3>Progressive Jackpots</h3>
+          <p>
+            Chase progressive jackpots that can reach millions. Every bet contributes to the jackpot, creating life-changing prizes.
+          </p>
+
+          <h3>Classic Slots</h3>
+          <p>
+            Return to basics with our classic 3-reel slots. Simple, elegant and timeless.
+          </p>
+
+          <h3>Video Slots</h3>
+          <p>
+            Enjoy stunning graphics, smooth animations and innovative bonus features with our modern video slots.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Slots Statistics</h2>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Number of Games</th>
+                  <th>Max Ways to Win</th>
+                  <th>Average RTP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Standard Slots</td>
+                  <td>2,000+</td>
+                  <td>4,240</td>
+                  <td>96.5%</td>
+                </tr>
+                <tr>
+                  <td>Megaways</td>
+                  <td>100+</td>
+                  <td>117,649</td>
+                  <td>96.7%</td>
+                </tr>
+                <tr>
+                  <td>Cluster Pays</td>
+                  <td>100+</td>
+                  <td>500</td>
+                  <td>96.4%</td>
+                </tr>
+                <tr>
+                  <td>Progressive Jackpots</td>
+                  <td>50+</td>
+                  <td>Variable</td>
+                  <td>94.0% - 96.0%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Slot Providers</h2>
+          <p>
+            We offer slots from the industry's best developers:
+          </p>
+          <ul>
+            <li><strong>Pragmatic Play</strong> - Leaders in innovation and quality</li>
+            <li><strong>NetEnt</strong> - World-class graphics</li>
+            <li><strong>Microgaming</strong> - Creators of Mega Moolah</li>
+            <li><strong>Play'n GO</strong> - Mobile gaming specialists</li>
+            <li><strong>Yggdrasil</strong> - Unique gameplay mechanics</li>
+            <li><strong>Red Tiger</strong> - Daily win optimization</li>
+            <li><strong>Big Time Gaming</strong> - Inventors of Megaways</li>
+            <li><strong>Quickspin</strong> - Engaging narratives</li>
+            <li><strong>Thunderkick</strong> - Artistic design</li>
+            <li><strong>Nolimit City</strong> - Extreme volatility</li>
+            <li><strong>Push Gaming</strong> - Innovative Cluster Pays</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Slot Features</h2>
+
+          <h3>Free Spins</h3>
+          <p>
+            Activate free spin rounds with multipliers and special symbols to maximize your wins.
+          </p>
+
+          <h3>Wild Symbols</h3>
+          <p>
+            Wild symbols substitute for other symbols to create winning combinations.
+          </p>
+
+          <h3>Scatter Symbols</h3>
+          <p>
+            Land on scatter symbols to trigger bonus features and free spins.
+          </p>
+
+          <h3>Multipliers</h3>
+          <p>
+            Boost your wins with multipliers that can reach up to 10,000x your bet.
+          </p>
+
+          <h3>Bonus Games</h3>
+          <p>
+            Access interactive mini-games with additional prizes and unique gameplay mechanics.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Tips for Playing Slots</h2>
+          <ul>
+            <li>
+              <strong>Understand RTP</strong> - Look for slots with a high RTP (Return to Player), typically 96% or more
+            </li>
+            <li>
+              <strong>Manage Your Bankroll</strong> - Set a budget and stick to it. Never bet more than you can afford to lose
+            </li>
+            <li>
+              <strong>Choose Volatility</strong> - Low volatility slots offer more frequent but smaller wins, while high volatility offers rarer but bigger wins
+            </li>
+            <li>
+              <strong>Take Advantage of Bonuses</strong> - Use welcome bonuses and free spins to extend your playing time
+            </li>
+            <li>
+              <strong>Play for Fun</strong> - Slots are designed for entertainment. Enjoy the experience without focusing solely on wins
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <h2>Explore Our Collection of {CASINO_CONFIG.stats.slots} Slots</h2>
+          <p>
+            Join {CASINO_CONFIG.name} today and discover your favorite slot among our vast selection.
+          </p>
+          <a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Play Slots</a>
+        </div>
+      </section>
+    </main>
+    <Footer currentLang="en" />
+  </body>
+</html>
+

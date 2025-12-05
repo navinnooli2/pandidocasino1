@@ -1,123 +1,123 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { CASINO_CONFIG } from '../consts';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { CASINO_CONFIG } from '../../consts';
 ---
 
 <!doctype html>
-<html lang="fr">
+<html lang="en">
   <head>
     <BaseHead 
-      title={`Paiements et Retraits - ${CASINO_CONFIG.name}`} 
-      description={`Méthodes de paiement sécurisées chez ${CASINO_CONFIG.name}. Dépôts instantanés, retraits rapides. Visa, Mastercard, PayPal, Bitcoin et plus.`}
-      currentLang="fr"
+      title={`Payments and Withdrawals - ${CASINO_CONFIG.name}`} 
+      description={`Secure payment methods at ${CASINO_CONFIG.name}. Instant deposits, fast withdrawals. Visa, Mastercard, PayPal, Bitcoin and more.`}
+      currentLang="en"
     />
   </head>
   <body>
-    <Header currentLang="fr" />
+    <Header currentLang="en" />
     <div class="home-link">
-      <a href="/">Pandido Casino</a>
+      <a href="/en/">Pandido Casino</a>
     </div>
     <main>
       <section class="page-hero">
         <div class="container">
-          <h1>Paiements - Dépôts et Retraits</h1>
+          <h1>Payments - Deposits and Withdrawals</h1>
           <p class="hero-subtitle">
-            La gestion de vos fonds doit être rapide, sécurisée et sans tracas. Chez {CASINO_CONFIG.name}, nous proposons une gamme complète de méthodes de paiement avec des dépôts instantanés, des retraits rapides et une sécurité de niveau bancaire qui protège votre argent à chaque étape.
+            Managing your funds should be fast, secure and hassle-free. At {CASINO_CONFIG.name}, we offer a comprehensive range of payment methods with instant deposits, fast withdrawals and bank-level security that protects your money at every step.
           </p>
         </div>
       </section>
 
       <section class="content-section">
         <div class="container">
-          <h2>Méthodes de Dépôt</h2>
+          <h2>Deposit Methods</h2>
           <p>
-            Alimentez votre compte instantanément en utilisant l'un de nos prestataires de paiement de confiance. Tous les dépôts sont traités immédiatement, vous permettant de commencer à jouer quelques secondes après la confirmation de votre transaction.
+            Fund your account instantly using one of our trusted payment providers. All deposits are processed immediately, allowing you to start playing seconds after your transaction is confirmed.
           </p>
 
-          <h3>Méthodes de Paiement Disponibles</h3>
+          <h3>Available Payment Methods</h3>
           <div class="table-container">
             <table>
               <thead>
                 <tr>
-                  <th>Méthode</th>
-                  <th>Temps de Traitement</th>
-                  <th>Dépôt Min.</th>
-                  <th>Dépôt Max.</th>
-                  <th>Frais</th>
+                  <th>Method</th>
+                  <th>Processing Time</th>
+                  <th>Min. Deposit</th>
+                  <th>Max. Deposit</th>
+                  <th>Fees</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>💳 Visa/Mastercard</td>
-                  <td>Instantané</td>
+                  <td>Instant</td>
                   <td>€10</td>
                   <td>€5,000</td>
-                  <td>Gratuit</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>💰 Skrill</td>
-                  <td>Instantané</td>
+                  <td>Instant</td>
                   <td>€10</td>
                   <td>€10,000</td>
-                  <td>Gratuit</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>💰 Neteller</td>
-                  <td>Instantané</td>
+                  <td>Instant</td>
                   <td>€10</td>
                   <td>€10,000</td>
-                  <td>Gratuit</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
-                  <td>🏦 Virement Bancaire</td>
-                  <td>1-3 jours ouvrables</td>
+                  <td>🏦 Bank Transfer</td>
+                  <td>1-3 business days</td>
                   <td>€20</td>
                   <td>€50,000</td>
-                  <td>Gratuit</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>₿ Bitcoin</td>
                   <td>15-30 minutes</td>
                   <td>€20</td>
                   <td>€25,000</td>
-                  <td>Gratuit</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>💎 Ethereum</td>
                   <td>5-15 minutes</td>
                   <td>€20</td>
                   <td>€25,000</td>
-                  <td>Gratuit</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>📱 Apple Pay</td>
-                  <td>Instantané</td>
+                  <td>Instant</td>
                   <td>€10</td>
                   <td>€3,000</td>
-                  <td>Gratuit</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>📱 Google Pay</td>
-                  <td>Instantané</td>
+                  <td>Instant</td>
                   <td>€10</td>
                   <td>€3,000</td>
-                  <td>Gratuit</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>🔵 PayPal</td>
-                  <td>Instantané</td>
+                  <td>Instant</td>
                   <td>€10</td>
                   <td>€5,000</td>
-                  <td>Gratuit</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>💳 Paysafecard</td>
-                  <td>Instantané</td>
+                  <td>Instant</td>
                   <td>€10</td>
                   <td>€1,000</td>
-                  <td>Gratuit</td>
+                  <td>Free</td>
                 </tr>
               </tbody>
             </table>
@@ -127,72 +127,72 @@ import { CASINO_CONFIG } from '../consts';
 
       <section class="content-section">
         <div class="container">
-          <h2>Méthodes de Retrait</h2>
+          <h2>Withdrawal Methods</h2>
           <p>
-            Retirez vos gains rapidement et en toute sécurité. La plupart des demandes de retrait sont traitées dans les 24 heures, les portefeuilles électroniques et les cryptomonnaies offrant les délais de paiement les plus rapides.
+            Withdraw your winnings quickly and securely. Most withdrawal requests are processed within 24 hours, with e-wallets and cryptocurrencies offering the fastest payout times.
           </p>
 
-          <h3>Délais de Traitement des Retraits</h3>
+          <h3>Withdrawal Processing Times</h3>
           <div class="table-container">
             <table>
               <thead>
                 <tr>
-                  <th>Méthode</th>
-                  <th>Temps de Traitement</th>
-                  <th>Retrait Min.</th>
-                  <th>Retrait Max.</th>
-                  <th>Frais</th>
+                  <th>Method</th>
+                  <th>Processing Time</th>
+                  <th>Min. Withdrawal</th>
+                  <th>Max. Withdrawal</th>
+                  <th>Fees</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>💰 Skrill</td>
-                  <td>0-24 heures</td>
+                  <td>0-24 hours</td>
                   <td>€20</td>
-                  <td>€10,000/jour</td>
-                  <td>Gratuit</td>
+                  <td>€10,000/day</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>💰 Neteller</td>
-                  <td>0-24 heures</td>
+                  <td>0-24 hours</td>
                   <td>€20</td>
-                  <td>€10,000/jour</td>
-                  <td>Gratuit</td>
+                  <td>€10,000/day</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>₿ Bitcoin</td>
-                  <td>0-12 heures</td>
+                  <td>0-12 hours</td>
                   <td>€20</td>
-                  <td>€25,000/jour</td>
-                  <td>Gratuit</td>
+                  <td>€25,000/day</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>💎 Ethereum</td>
-                  <td>0-12 heures</td>
+                  <td>0-12 hours</td>
                   <td>€20</td>
-                  <td>€25,000/jour</td>
-                  <td>Gratuit</td>
+                  <td>€25,000/day</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>💳 Visa/Mastercard</td>
-                  <td>1-3 jours ouvrables</td>
+                  <td>1-3 business days</td>
                   <td>€20</td>
-                  <td>€5,000/jour</td>
-                  <td>Gratuit</td>
+                  <td>€5,000/day</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
-                  <td>🏦 Virement Bancaire</td>
-                  <td>3-5 jours ouvrables</td>
+                  <td>🏦 Bank Transfer</td>
+                  <td>3-5 business days</td>
                   <td>€50</td>
-                  <td>€50,000/jour</td>
-                  <td>Gratuit</td>
+                  <td>€50,000/day</td>
+                  <td>Free</td>
                 </tr>
                 <tr>
                   <td>🔵 PayPal</td>
-                  <td>0-24 heures</td>
+                  <td>0-24 hours</td>
                   <td>€20</td>
-                  <td>€5,000/jour</td>
-                  <td>Gratuit</td>
+                  <td>€5,000/day</td>
+                  <td>Free</td>
                 </tr>
               </tbody>
             </table>
@@ -202,63 +202,63 @@ import { CASINO_CONFIG } from '../consts';
 
       <section class="content-section">
         <div class="container">
-          <h2>Sécurité et Vérification</h2>
+          <h2>Security and Verification</h2>
           <p>
-            Votre sécurité financière est notre priorité absolue. Toutes les transactions sont protégées par un chiffrement SSL 256 bits, la même technologie utilisée par les grandes banques mondiales.
+            Your financial security is our absolute priority. All transactions are protected by 256-bit SSL encryption, the same technology used by major world banks.
           </p>
 
-          <h3>Vérification de Compte</h3>
+          <h3>Account Verification</h3>
           <p>
-            Pour se conformer aux exigences réglementaires et protéger contre la fraude, nous exigeons une vérification d'identité avant de traiter votre premier retrait. Le processus est simple :
+            To comply with regulatory requirements and protect against fraud, we require identity verification before processing your first withdrawal. The process is simple:
           </p>
           <ul>
             <li>
-              <strong>Preuve d'Identité</strong> - Pièce d'identité délivrée par le gouvernement (passeport, permis de conduire ou carte d'identité nationale)
+              <strong>Proof of Identity</strong> - Government-issued ID (passport, driver's license or national ID card)
             </li>
             <li>
-              <strong>Preuve de Domicile</strong> - Facture de service public récente ou relevé bancaire (daté des 3 derniers mois)
+              <strong>Proof of Address</strong> - Recent utility bill or bank statement (dated within the last 3 months)
             </li>
             <li>
-              <strong>Vérification de la Méthode de Paiement</strong> - Photo de la carte (recto uniquement, chiffres du milieu masqués) ou capture d'écran du portefeuille électronique
+              <strong>Payment Method Verification</strong> - Photo of card (front only, middle numbers masked) or e-wallet screenshot
             </li>
           </ul>
           <p>
-            Téléchargez les documents directement via votre tableau de bord de compte. Notre équipe de vérification examine les soumissions dans les 24 heures en jours ouvrables.
+            Upload documents directly via your account dashboard. Our verification team reviews submissions within 24 hours on business days.
           </p>
         </div>
       </section>
 
       <section class="content-section">
         <div class="container">
-          <h2>Limites de Paiement</h2>
+          <h2>Payment Limits</h2>
           
-          <h3>Limites Quotidiennes</h3>
+          <h3>Daily Limits</h3>
           <ul>
-            <li>Comptes standard : €5,000 par jour</li>
-            <li>Niveau Argent : €10,000 par jour</li>
-            <li>Niveau Or : €25,000 par jour</li>
-            <li>Niveau Platine : €50,000 par jour</li>
+            <li>Standard accounts: €5,000 per day</li>
+            <li>Silver level: €10,000 per day</li>
+            <li>Gold level: €25,000 per day</li>
+            <li>Platinum level: €50,000 per day</li>
           </ul>
 
-          <h3>Limites Mensuelles</h3>
+          <h3>Monthly Limits</h3>
           <ul>
-            <li>Comptes standard : €50,000 par mois</li>
-            <li>Comptes VIP : Illimité (sous réserve d'arrangement individuel)</li>
+            <li>Standard accounts: €50,000 per month</li>
+            <li>VIP accounts: Unlimited (subject to individual arrangement)</li>
           </ul>
           <p>
-            Des limites plus élevées disponibles sur demande pour les joueurs VIP. Contactez notre équipe de support pour discuter d'arrangements personnalisés.
+            Higher limits available upon request for VIP players. Contact our support team to discuss personalized arrangements.
           </p>
         </div>
       </section>
 
       <section class="content-section">
         <div class="container">
-          <h2>Paiements en Cryptomonnaie</h2>
+          <h2>Cryptocurrency Payments</h2>
           <p>
-            Nous embrassons l'avenir de la finance avec un support complet des cryptomonnaies. Les transactions crypto offrent une confidentialité renforcée, un traitement plus rapide et aucun frais d'intermédiaire.
+            We embrace the future of finance with full cryptocurrency support. Crypto transactions offer enhanced privacy, faster processing and no intermediary fees.
           </p>
 
-          <h3>Cryptomonnaies Supportées :</h3>
+          <h3>Supported Cryptocurrencies:</h3>
           <ul>
             <li>Bitcoin (BTC)</li>
             <li>Ethereum (ETH)</li>
@@ -267,49 +267,49 @@ import { CASINO_CONFIG } from '../consts';
             <li>Tether (USDT)</li>
           </ul>
           <p>
-            Les dépôts en crypto nécessitent des confirmations réseau avant que les fonds ne soient crédités. Le Bitcoin nécessite généralement 3 confirmations (environ 30 minutes), tandis que l'Ethereum nécessite 12 confirmations (environ 3 minutes).
+            Crypto deposits require network confirmations before funds are credited. Bitcoin typically requires 3 confirmations (approximately 30 minutes), while Ethereum requires 12 confirmations (approximately 3 minutes).
           </p>
         </div>
       </section>
 
       <section class="content-section">
         <div class="container">
-          <h2>Banque Responsable</h2>
+          <h2>Responsible Banking</h2>
           <p>
-            Définissez des limites de dépôt pour maintenir le contrôle de vos dépenses. Options disponibles incluant des limites quotidiennes, hebdomadaires et mensuelles qui peuvent être ajustées via les paramètres de votre compte. Les augmentations prennent effet après une période de réflexion de 24 heures, tandis que les diminutions sont immédiates.
+            Set deposit limits to maintain control of your spending. Options available including daily, weekly and monthly limits that can be adjusted via your account settings. Increases take effect after a 24-hour cooling-off period, while decreases are immediate.
           </p>
         </div>
       </section>
 
       <section class="content-section">
         <div class="container">
-          <h2>Questions Fréquentes</h2>
+          <h2>Frequently Asked Questions</h2>
           
           <div class="faq-item">
-            <h3>Y a-t-il des frais ?</h3>
+            <h3>Are there any fees?</h3>
             <p>
-              {CASINO_CONFIG.name} ne facture pas de frais pour les dépôts ou les retraits. Cependant, votre prestataire de paiement peut appliquer ses propres frais.
+              {CASINO_CONFIG.name} does not charge fees for deposits or withdrawals. However, your payment provider may apply its own fees.
             </p>
           </div>
 
           <div class="faq-item">
-            <h3>Combien de temps prennent les retraits ?</h3>
+            <h3>How long do withdrawals take?</h3>
             <p>
-              Les portefeuilles électroniques et les cryptomonnaies sont généralement traités dans les 24 heures. Les retraits par carte prennent 1-3 jours ouvrables, tandis que les virements bancaires nécessitent 3-5 jours ouvrables.
+              E-wallets and cryptocurrencies are typically processed within 24 hours. Card withdrawals take 1-3 business days, while bank transfers require 3-5 business days.
             </p>
           </div>
 
           <div class="faq-item">
-            <h3>Puis-je retirer vers une méthode différente de celle utilisée pour le dépôt ?</h3>
+            <h3>Can I withdraw to a different method than the one used for deposit?</h3>
             <p>
-              Pour des raisons de sécurité, les retraits doivent être effectués vers la même méthode utilisée pour le dépôt lorsque c'est possible. Des méthodes alternatives peuvent être arrangées après vérification.
+              For security reasons, withdrawals must be made to the same method used for deposit when possible. Alternative methods can be arranged after verification.
             </p>
           </div>
 
           <div class="faq-item">
-            <h3>Quel est le montant minimum de retrait ?</h3>
+            <h3>What is the minimum withdrawal amount?</h3>
             <p>
-              Le retrait minimum est de €20 pour la plupart des méthodes, les virements bancaires nécessitant un minimum de €50.
+              The minimum withdrawal is €20 for most methods, with bank transfers requiring a minimum of €50.
             </p>
           </div>
         </div>
@@ -317,15 +317,15 @@ import { CASINO_CONFIG } from '../consts';
 
       <section class="cta-section">
         <div class="container">
-          <h2>Commencez à jouer chez {CASINO_CONFIG.name} en toute confiance</h2>
+          <h2>Start playing at {CASINO_CONFIG.name} with confidence</h2>
           <p>
-            En sachant que vos fonds sont sécurisés et accessibles chaque fois que vous en avez besoin.
+            Knowing your funds are secure and accessible whenever you need them.
           </p>
-          <a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Jouer Maintenant</a>
+          <a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Play Now</a>
         </div>
       </section>
     </main>
-    <Footer currentLang="fr" />
+    <Footer currentLang="en" />
   </body>
 </html>
 
@@ -539,3 +539,4 @@ import { CASINO_CONFIG } from '../consts';
     }
   }
 </style>
+

@@ -1,0 +1,270 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PageLayout from '../../components/PageLayout.astro';
+import { CASINO_CONFIG } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead 
+      title={`Welcome Bonus - ${CASINO_CONFIG.welcomeBonus.percentage} up to ${CASINO_CONFIG.welcomeBonus.maxAmount} - ${CASINO_CONFIG.name}`} 
+      description={`Claim your ${CASINO_CONFIG.welcomeBonus.percentage} welcome bonus up to ${CASINO_CONFIG.welcomeBonus.maxAmount} + ${CASINO_CONFIG.welcomeBonus.freeSpins} free spins at ${CASINO_CONFIG.name}.`}
+      currentLang="en"
+    />
+  </head>
+	<body>
+		<Header currentLang="en" />
+		<div class="home-link">
+			<a href="/en/">Pandido Casino</a>
+		</div>
+		<PageLayout />
+		<main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>
+            Welcome Bonus - Claim {CASINO_CONFIG.welcomeBonus.percentage} up to {CASINO_CONFIG.welcomeBonus.maxAmount} + {CASINO_CONFIG.welcomeBonus.freeSpins} Free Spins
+          </h1>
+          <p class="hero-subtitle">
+            New warriors entering the {CASINO_CONFIG.shortName} arena receive a legendary welcome package worth up to {CASINO_CONFIG.welcomeBonus.maxAmount} plus {CASINO_CONFIG.welcomeBonus.freeSpins} free spins spread across your first four deposits. This exclusive offer gives you maximum firepower to explore our vast game collection and pursue those epic victories.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Welcome Package Details</h2>
+          
+          <div class="bonus-card">
+            <h3>First Deposit</h3>
+            <p><strong>BEST VALUE</strong></p>
+            <p><strong>{CASINO_CONFIG.welcomeBonus.percentage} up to {CASINO_CONFIG.welcomeBonus.maxAmount}</strong></p>
+            <p>+ 200 Free Spins</p>
+            <ul class="bonus-features">
+              <li>Minimum deposit: {CASINO_CONFIG.welcomeBonus.minDeposit}</li>
+              <li>Free spins on Book of Dead</li>
+              <li>Wagering requirement: {CASINO_CONFIG.welcomeBonus.wagering}x</li>
+              <li>Valid for 30 days</li>
+            </ul>
+            <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Claim Now</a>
+          </div>
+
+          <div class="bonus-card">
+            <h3>Second Deposit</h3>
+            <p><strong>100% up to €750</strong></p>
+            <p>+ 75 Free Spins</p>
+            <ul class="bonus-features">
+              <li>Minimum deposit: {CASINO_CONFIG.welcomeBonus.minDeposit}</li>
+              <li>Free spins on Starburst</li>
+              <li>Wagering requirement: {CASINO_CONFIG.welcomeBonus.wagering}x</li>
+              <li>Valid for 30 days</li>
+            </ul>
+            <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Claim Now</a>
+          </div>
+
+          <div class="bonus-card">
+            <h3>Third Deposit</h3>
+            <p><strong>75% up to €750</strong></p>
+            <p>+ 50 Free Spins</p>
+            <ul class="bonus-features">
+              <li>Minimum deposit: {CASINO_CONFIG.welcomeBonus.minDeposit}</li>
+              <li>Free spins on Gonzo's Quest</li>
+              <li>Wagering requirement: {CASINO_CONFIG.welcomeBonus.wagering}x</li>
+              <li>Valid for 30 days</li>
+            </ul>
+            <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Claim Now</a>
+          </div>
+
+          <div class="bonus-card">
+            <h3>Fourth Deposit</h3>
+            <p><strong>50% up to €500</strong></p>
+            <p>+ 25 Free Spins</p>
+            <ul class="bonus-features">
+              <li>Minimum deposit: {CASINO_CONFIG.welcomeBonus.minDeposit}</li>
+              <li>Free spins on Big Bass Bonanza</li>
+              <li>Wagering requirement: {CASINO_CONFIG.welcomeBonus.wagering}x</li>
+              <li>Valid for 30 days</li>
+            </ul>
+            <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Claim Now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>How to Claim Your Welcome Bonus</h2>
+          
+          <div class="step-grid">
+            <div class="step-item">
+              <div class="step-number">1</div>
+              <h3>Create Your Account</h3>
+              <p>
+                Create your {CASINO_CONFIG.name} account by providing basic information including email, username and password. The registration process takes less than two minutes.
+              </p>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">2</div>
+              <h3>Verify Your Email</h3>
+              <p>
+                Check your inbox for a verification email and click the confirmation link. This activates your account and makes you eligible for the welcome package.
+              </p>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">3</div>
+              <h3>Make Your First Deposit</h3>
+              <p>
+                Navigate to the cashier, select your preferred payment method and deposit at least {CASINO_CONFIG.welcomeBonus.minDeposit}. The {CASINO_CONFIG.welcomeBonus.percentage} bonus is automatically credited to your account.
+              </p>
+            </div>
+
+            <div class="step-item">
+              <div class="step-number">4</div>
+              <h3>Receive Your Free Spins</h3>
+              <p>
+                Free spins are credited immediately after your deposit is confirmed. Access them by opening the designated slot game and start playing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>General Bonus Terms</h2>
+
+          <h3>Wagering Requirements</h3>
+          <p>
+            All bonus funds are subject to a {CASINO_CONFIG.welcomeBonus.wagering}x wagering requirement. This means you must wager the bonus amount {CASINO_CONFIG.welcomeBonus.wagering} times before withdrawal. For example, a €100 bonus requires €4,000 in total wagers.
+          </p>
+
+          <h4>Calculation Example:</h4>
+          <ul>
+            <li>Deposit: €100</li>
+            <li>Bonus received: €250 ({CASINO_CONFIG.welcomeBonus.percentage})</li>
+            <li>Total bonus funds: €250</li>
+            <li>Wagering requirement: €250 × {CASINO_CONFIG.welcomeBonus.wagering} = €10,000</li>
+          </ul>
+
+          <h3>Game Contributions</h3>
+          <p>Different games contribute varying percentages to wagering requirements:</p>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Game Type</th>
+                  <th>Contribution</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Slot machines</td>
+                  <td>100%</td>
+                </tr>
+                <tr>
+                  <td>Scratch cards</td>
+                  <td>100%</td>
+                </tr>
+                <tr>
+                  <td>Keno</td>
+                  <td>100%</td>
+                </tr>
+                <tr>
+                  <td>Table games</td>
+                  <td>10%</td>
+                </tr>
+                <tr>
+                  <td>Video Poker</td>
+                  <td>10%</td>
+                </tr>
+                <tr>
+                  <td>Live casino</td>
+                  <td>10%</td>
+                </tr>
+                <tr>
+                  <td>Progressive jackpots</td>
+                  <td>0%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Maximum Bet Rule</h3>
+          <p>
+            When playing with bonus funds, the maximum bet allowed is €5 per spin or €0.50 per payline. Exceeding this limit may void your bonus and all associated winnings.
+          </p>
+
+          <h3>Time Limits</h3>
+          <p>
+            Bonuses must be used within 30 days of activation. Free spins expire after 7 days if unused. All unused bonus funds or spins are automatically removed after the expiration period.
+          </p>
+
+          <h3>Withdrawal Restrictions</h3>
+          <p>
+            Withdrawals are not permitted until wagering requirements are fully satisfied. Requesting a withdrawal before completion will result in the loss of all bonus funds and resulting winnings.
+          </p>
+
+          <h3>Maximum Winnings Cap</h3>
+          <p>
+            Free spin winnings are capped at €100 per bonus. Any excess winnings are removed when wagering requirements are completed.
+          </p>
+
+          <div class="important-note">
+            <p>
+              <strong>Important:</strong> This bonus is designed to enhance your entertainment, not create financial pressure. Set deposit limits before claiming bonuses, and never wager more than you can afford to lose.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="faq-item">
+            <h3>Can I withdraw my deposit immediately after claiming the bonus?</h3>
+            <p>
+              No. Withdrawing before meeting wagering requirements results in the loss of all bonus funds and winnings.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Do I have to claim all four bonuses?</h3>
+            <p>
+              No. Each bonus is optional and can be claimed independently. You can skip bonuses if you prefer to play without restrictions.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What happens if I don't use my free spins?</h3>
+            <p>
+              Unused free spins expire after 7 days and cannot be recovered.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can I play live casino games with bonus funds?</h3>
+            <p>
+              Yes, but live casino games only contribute 10% to wagering requirements, making them less efficient for clearing bonuses.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <h2>Ready to claim your throne?</h2>
+          <p>
+            Join {CASINO_CONFIG.name} today and start your journey with the most generous welcome package in the kingdom.
+          </p>
+          <a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Claim My Bonus</a>
+        </div>
+      </section>
+    </main>
+    <Footer currentLang="en" />
+  </body>
+</html>
+

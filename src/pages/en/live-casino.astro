@@ -1,0 +1,251 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PageLayout from '../../components/PageLayout.astro';
+import { CASINO_CONFIG } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead 
+      title={`Live Casino - Real Dealers, Real Wins - ${CASINO_CONFIG.name}`} 
+      description={`Live casino games with real dealers at ${CASINO_CONFIG.name}. Live Blackjack, Roulette, Baccarat with HD streaming and interactive gameplay.`}
+      currentLang="en"
+    />
+  </head>
+	<body>
+		<Header currentLang="en" />
+		<div class="home-link">
+			<a href="/en/">Pandido Casino</a>
+		</div>
+		<PageLayout />
+		<main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Live Casino - Real Dealers, Real Wins</h1>
+          <p class="hero-subtitle">
+            Step into the authentic casino atmosphere without leaving your home. At {CASINO_CONFIG.name}, our live dealer games bring the excitement of a real casino directly to your screen, with professional dealers, HD streaming and interactive gameplay that will make you feel like you're sitting at the tables of Monte Carlo.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Live Casino Games</h2>
+          
+					<div class="game-grid">
+						<div class="game-card">
+							<div class="game-image">
+								<img src="/games/crazy-time.svg" alt="Crazy Time" />
+							</div>
+							<h3>Crazy Time</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Join Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">
+								<img src="/games/live-blackjack.svg" alt="Live Blackjack" />
+							</div>
+							<h3>Live Blackjack</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Join Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">
+								<img src="/games/live-roulette.svg" alt="Live Roulette" />
+							</div>
+							<h3>Live Roulette</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Join Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">
+								<img src="/games/live-baccarat.svg" alt="Live Baccarat" />
+							</div>
+							<h3>Live Baccarat</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Join Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">
+								<img src="/games/monopoly-live.svg" alt="Monopoly Live" />
+							</div>
+							<h3>Monopoly Live</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Join Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">
+								<img src="/games/dream-catcher.svg" alt="Dream Catcher" />
+							</div>
+							<h3>Dream Catcher</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Join Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">
+								<img src="/games/lightning-roulette.svg" alt="Lightning Roulette" />
+							</div>
+							<h3>Lightning Roulette</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Join Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">
+								<img src="/games/live-poker.svg" alt="Live Poker" />
+							</div>
+							<h3>Live Poker</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Join Table</a>
+						</div>
+					</div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Why Choose Live Casino?</h2>
+
+          <h3>Authentic Experience</h3>
+          <p>
+            Real dealers, real cards, real wheels. Watch every shuffle, every spin and every deal in crystal-clear HD. Our studios are equipped with multiple camera angles, giving you a front-row seat to all the action.
+          </p>
+
+          <h3>Interactive Gameplay</h3>
+          <p>
+            Chat with dealers and other players in real-time. Our professional dealers are friendly, engaging and create a welcoming atmosphere that makes every session memorable. Ask questions, celebrate wins and enjoy the social aspect of casino gaming.
+          </p>
+
+          <h3>Fair and Transparent</h3>
+          <p>
+            Every card dealt and every wheel spin happens right before your eyes. No RNG, no algorithms - just pure, transparent gameplay you can trust. All our live games are regulated and certified for fairness.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Live Casino Game Types</h2>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Game Type</th>
+                  <th>Available Tables</th>
+                  <th>Bet Range</th>
+                  <th>RTP</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Live Roulette</td>
+                  <td>25+</td>
+                  <td>€0.10 - €10,000</td>
+                  <td>97.30%</td>
+                </tr>
+                <tr>
+                  <td>Live Blackjack</td>
+                  <td>40+</td>
+                  <td>€1 - €5,000</td>
+                  <td>99.28%</td>
+                </tr>
+                <tr>
+                  <td>Live Baccarat</td>
+                  <td>15+</td>
+                  <td>€1 - €15,000</td>
+                  <td>98.94%</td>
+                </tr>
+                <tr>
+                  <td>Live Poker</td>
+                  <td>12+</td>
+                  <td>€0.50 - €2,500</td>
+                  <td>97.84%</td>
+                </tr>
+                <tr>
+                  <td>Game Shows</td>
+                  <td>8+</td>
+                  <td>€0.10 - €1,000</td>
+                  <td>94.50% - 96.20%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Game Show Highlights</h2>
+
+          <h3>Crazy Time</h3>
+          <p>
+            The planet's most popular live game show. Spin the massive wheel for multipliers up to 20,000x, with four bonus rounds including Cash Hunt, Pachinko, Coin Flip and the legendary Crazy Time bonus.
+          </p>
+
+          <h3>Monopoly Live</h3>
+          <p>
+            Combines the classic board game with live casino action. Land on bonus segments to trigger the 3D Monopoly world where Mr. Monopoly walks around the board collecting prizes and multipliers.
+          </p>
+
+          <h3>Dream Catcher</h3>
+          <p>
+            Simple yet thrilling money wheel game. Bet on numbers 1, 2, 5, 10, 20 or 40, and watch the wheel spin. Land on multipliers for boosted wins up to 7x.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>VIP Tables</h2>
+          <p>
+            For high rollers seeking exclusive experiences, our VIP tables offer:
+          </p>
+          <ul>
+            <li>Higher betting limits up to €50,000 per hand</li>
+            <li>Dedicated dealers and personalized service</li>
+            <li>Private tables available on request</li>
+            <li>Faster gameplay with reduced waiting times</li>
+            <li>Priority customer support</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Live Casino Providers</h2>
+          <p>
+            We partner with the industry's best live casino studios:
+          </p>
+          <ul>
+            <li><strong>Evolution Gaming</strong> - The undisputed leader in live casino innovation</li>
+            <li><strong>Pragmatic Play Live</strong> - High-quality tables with engaging hosts</li>
+            <li><strong>Ezugi</strong> - Diverse game selection with unique variants</li>
+            <li><strong>Authentic Gaming</strong> - Real casinos streamed live</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Gaming Tips</h2>
+          <p>
+            Master the basics before diving into high-stakes tables. Start with lower betting limits to understand game flow and dealer patterns. Enjoy side bets for extra excitement, but remember they typically have higher house edges. Most importantly, set time and money limits before you start playing.
+          </p>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <h2>Join a table at {CASINO_CONFIG.name}</h2>
+          <p>
+            Experience the thrill of live dealer gaming with professional dealers and real-time action.
+          </p>
+          <a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Play Live</a>
+        </div>
+      </section>
+    </main>
+    <Footer currentLang="en" />
+  </body>
+</html>
+

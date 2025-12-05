@@ -1,0 +1,237 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import PageLayout from '../../components/PageLayout.astro';
+import { CASINO_CONFIG } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead 
+      title={`Sportsbook - Online Sports Betting - ${CASINO_CONFIG.name}`} 
+      description={`Bet on sports with ${CASINO_CONFIG.name}. Complete coverage of global sporting events, competitive odds, live betting and instant settlements.`}
+      currentLang="en"
+    />
+  </head>
+	<body>
+		<Header currentLang="en" />
+		<div class="home-link">
+			<a href="/en/">Pandido Casino</a>
+		</div>
+		<PageLayout />
+		<main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Sportsbook - Where Champions Bet</h1>
+          <p class="hero-subtitle">
+            Welcome to the arena where sports knowledge meets winning potential. At {CASINO_CONFIG.name} Sportsbook, we offer complete coverage of global sporting events with competitive odds, live betting and instant settlements. Whether you're supporting your favorite team or seeking value on niche markets, we've got you covered.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Today's Featured Matches</h2>
+          
+          <div class="game-grid">
+            <div class="game-card">
+              <div class="game-image">
+                PREMIER LEAGUE • LIVE<br/>67' - 2:1
+              </div>
+              <h3>Manchester United vs Liverpool</h3>
+              <p><strong>Manchester United</strong> 2.15</p>
+              <p><strong>Draw</strong> 3.40</p>
+              <p><strong>Liverpool</strong> 2.85</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Bet</a>
+            </div>
+
+            <div class="game-card">
+              <div class="game-image">LA LIGA • Today 20:00</div>
+              <h3>Real Madrid vs Barcelona</h3>
+              <p><strong>Real Madrid</strong> 1.65</p>
+              <p><strong>Draw</strong> 3.80</p>
+              <p><strong>Barcelona</strong> 4.50</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Bet</a>
+            </div>
+
+            <div class="game-card">
+              <div class="game-image">NBA • Today 01:30</div>
+              <h3>LA Lakers vs Boston Celtics</h3>
+              <p><strong>LA Lakers</strong> 1.85</p>
+              <p><strong>Boston Celtics</strong> 1.95</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Bet</a>
+            </div>
+
+            <div class="game-card">
+              <div class="game-image">
+                TENNIS • ATP FINALS • LIVE<br/>Set 2 - 4:3
+              </div>
+              <h3>Novak Djokovic vs Carlos Alcaraz</h3>
+              <p><strong>Novak Djokovic</strong> 1.45</p>
+              <p><strong>Carlos Alcaraz</strong> 2.75</p>
+              <a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Bet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Sports Coverage</h2>
+
+          <h3>Football</h3>
+          <p>
+            The beautiful game takes center stage with coverage of every major league and tournament. From the Premier League to the Champions League, from World Cup qualifiers to local derbies, we offer hundreds of markets per match.
+          </p>
+          <p><strong>Popular Markets:</strong></p>
+          <ul>
+            <li>Match Result (1X2)</li>
+            <li>Both Teams to Score</li>
+            <li>Over/Under Goals</li>
+            <li>Exact Score</li>
+            <li>First Goalscorer</li>
+            <li>Half-Time/Full-Time Result</li>
+          </ul>
+
+          <h3>Tennis</h3>
+          <p>
+            Bet on every serve, every set and every match from Grand Slams to ATP/WTA events. Live betting with point-by-point updates keeps you in the action.
+          </p>
+
+          <h3>Basketball</h3>
+          <p>
+            NBA, EuroLeague and international competitions covered with extensive markets including point spreads, totals and player props.
+          </p>
+
+          <h3>Other Sports</h3>
+          <ul>
+            <li><strong>Ice Hockey</strong> - NHL, KHL and European leagues</li>
+            <li><strong>Cricket</strong> - Test matches, ODI, T20 leagues</li>
+            <li><strong>Rugby</strong> - Union and League</li>
+            <li><strong>MMA/Boxing</strong> - Major fight nights and PPV</li>
+            <li><strong>Esports</strong> - CS:GO, Dota 2, League of Legends</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Betting Markets Overview</h2>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Sport</th>
+                  <th>Events/Month</th>
+                  <th>Markets per Event</th>
+                  <th>Live Betting</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Football</td>
+                  <td>15,000+</td>
+                  <td>200+</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Tennis</td>
+                  <td>2,500+</td>
+                  <td>80+</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Basketball</td>
+                  <td>3,000+</td>
+                  <td>150+</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Ice Hockey</td>
+                  <td>1,200+</td>
+                  <td>120+</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Cricket</td>
+                  <td>800+</td>
+                  <td>100+</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Live Betting</h2>
+          <p>
+            Watch odds change in real-time as the action unfolds. Our live betting platform offers instant updates, dynamic odds and cash-out options that let you secure profits or minimize losses before the final whistle.
+          </p>
+
+          <h3>Live Features:</h3>
+          <ul>
+            <li>Real-time odds updates</li>
+            <li>Live match statistics and tracking</li>
+            <li>Partial cash-out available</li>
+            <li>Live streaming for selected events</li>
+            <li>Quick bet slip for fast betting</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Bet Builder</h2>
+          <p>
+            Create custom bets by combining multiple selections from the same match. Want to bet on a home win, over 2.5 goals and both teams to score? Build it yourself and get enhanced odds for your unique prediction.
+          </p>
+
+          <h3>Accumulator Boosts</h3>
+          <p>
+            Stack your selections for bigger returns. We offer accumulator insurance and enhanced odds on multi-selection bets:
+          </p>
+          <ul>
+            <li>4-fold Acca - 5% bonus on winnings</li>
+            <li>5-fold Acca - 10% bonus on winnings</li>
+            <li>6+ fold Acca - 15% bonus on winnings</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Betting Tips</h2>
+          <p>
+            Research form, head-to-head records and team news before placing bets. Specialize in specific leagues or sports where you have real knowledge. Avoid chasing losses with impulsive bets, and never bet more than you can afford to lose. Value betting - finding odds that don't reflect true probability - is the key to long-term success.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section">
+        <div class="container">
+          <h2>Mobile Betting</h2>
+          <p>
+            Place bets on the go with our fully optimized mobile platform. Access live betting, check results and manage your account from any device. Fast deposits and instant withdrawals mean you're always ready for the next big match.
+          </p>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <h2>Start betting at {CASINO_CONFIG.name} Sportsbook</h2>
+          <p>
+            Transform your sports knowledge into winning opportunities with competitive odds and comprehensive market coverage.
+          </p>
+          <a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Start Betting</a>
+        </div>
+      </section>
+    </main>
+    <Footer currentLang="en" />
+  </body>
+</html>
+
