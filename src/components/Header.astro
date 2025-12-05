@@ -14,7 +14,7 @@ const isEnglish = currentLang === 'en';
       </a>
     </div>
     <div class="nav-links">
-      <a href={`${basePath}/paiements`}>{isEnglish ? 'Payments' : 'Paiements'}</a>
+      <a href={isEnglish ? `${basePath}/payments` : `${basePath}/paiements`}>{isEnglish ? 'Payments' : 'Paiements'}</a>
       <a href={`${basePath}/bonus`}>Bonus</a>
       <a href={`${basePath}/sports`}>Sports</a>
       <a href={`${basePath}/live-casino`}>Live Casino</a>
