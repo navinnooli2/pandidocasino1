@@ -22,11 +22,12 @@
   },
   "devDependencies": {
     "glob": "^13.0.0",
+    "prettier": "^3.7.4",
     "wrangler": "4.21.x"
   },
   "scripts": {
     "astro": "astro",
-    "build": "astro build",
+    "build": "astro build && node scripts/format-html.js",
     "cf-typegen": "wrangler types",
     "check": "astro build && tsc && wrangler deploy --dry-run",
     "deploy": "wrangler deploy",
