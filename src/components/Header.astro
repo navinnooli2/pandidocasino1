@@ -5,7 +5,9 @@ import { CASINO_CONFIG } from '../consts';
 <header>
   <nav>
     <div class="logo">
-      <a href="/">{CASINO_CONFIG.shortName} Casino</a>
+      <a href="/">
+        <img src="https://res.cloudinary.com/dzwk5oovk/image/upload/v1764931760/Pandido-Casino-Review_uqtsoy.png" alt="Pandido Casino" />
+      </a>
     </div>
     <div class="nav-links">
       <a href="/paiements">Paiements</a>
@@ -33,10 +35,10 @@ import { CASINO_CONFIG } from '../consts';
     z-index: 1000;
     background: rgba(10, 10, 15, 0.95);
     backdrop-filter: blur(20px);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 0, 255, 0.2);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.1);
     padding: 0;
     margin: 0;
-    border-bottom: 2px solid rgba(255, 0, 255, 0.3);
+    border-bottom: 2px solid rgba(212, 175, 55, 0.3);
   }
 
   nav {
@@ -51,16 +53,22 @@ import { CASINO_CONFIG } from '../consts';
   }
 
   .logo a {
-    font-size: 1.8rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #ff00ff 0%, #9d00ff 50%, #0066ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    display: inline-block;
     text-decoration: none;
-    white-space: nowrap;
+  }
+
+  .logo img {
+    height: 50px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
     filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.8));
     animation: logoGlow 3s ease-in-out infinite alternate;
+    transition: transform 0.3s ease;
+  }
+
+  .logo img:hover {
+    transform: scale(1.05);
   }
 
   @keyframes logoGlow {
@@ -80,7 +88,6 @@ import { CASINO_CONFIG } from '../consts';
     font-weight: 500;
     transition: all 0.3s ease;
     white-space: nowrap;
-    text-shadow: 0 0 5px rgba(255, 0, 255, 0.3);
     position: relative;
   }
 
@@ -91,14 +98,14 @@ import { CASINO_CONFIG } from '../consts';
     left: 0;
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #ff00ff, #00ffff);
+    background: linear-gradient(90deg, #d4af37, #f4d03f);
     transition: width 0.3s ease;
-    box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
   }
 
   .nav-links a:hover {
-    color: #00ffff;
-    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+    color: #f4d03f;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
   }
 
   .nav-links a:hover::after {
@@ -123,12 +130,13 @@ import { CASINO_CONFIG } from '../consts';
   }
 
   .btn-primary {
-    background: linear-gradient(135deg, #ff00ff 0%, #9d00ff 50%, #0066ff 100%);
-    color: white;
-    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.3);
-    border: 1px solid rgba(255, 0, 255, 0.5);
+    background: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%);
+    color: #1a1a1a;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4), 0 4px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(212, 175, 55, 0.5);
     position: relative;
     overflow: hidden;
+    font-weight: 700;
   }
 
   .btn-primary::before {
@@ -138,7 +146,7 @@ import { CASINO_CONFIG } from '../consts';
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
     transition: left 0.5s;
   }
 
@@ -147,21 +155,21 @@ import { CASINO_CONFIG } from '../consts';
   }
 
   .btn-primary:hover {
-    transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 0 30px rgba(255, 0, 255, 0.8), 0 0 60px rgba(255, 0, 255, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6), 0 6px 20px rgba(212, 175, 55, 0.4), 0 4px 15px rgba(0, 0, 0, 0.5);
   }
 
   .btn-secondary {
     background: transparent;
-    color: #00ffff;
-    border: 2px solid #00ffff;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
   }
 
   .btn-secondary:hover {
-    background: rgba(0, 255, 255, 0.1);
-    color: white;
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6), 0 0 50px rgba(0, 255, 255, 0.3);
+    background: rgba(212, 175, 55, 0.1);
+    color: #f4d03f;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
     transform: translateY(-2px);
   }
 
@@ -178,10 +186,10 @@ import { CASINO_CONFIG } from '../consts';
   .mobile-menu-toggle span {
     width: 25px;
     height: 3px;
-    background: #ff00ff;
+    background: #d4af37;
     border-radius: 2px;
     transition: all 0.3s ease;
-    box-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
   }
 
   @media (max-width: 968px) {
@@ -223,14 +231,14 @@ import { CASINO_CONFIG } from '../consts';
       right: 0;
       background: rgba(10, 10, 15, 0.98);
       backdrop-filter: blur(20px);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 0, 255, 0.3);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(212, 175, 55, 0.2);
       padding: 1rem;
       gap: 1rem;
-      border-top: 2px solid rgba(255, 0, 255, 0.3);
+      border-top: 2px solid rgba(212, 175, 55, 0.3);
     }
 
     .nav-links.mobile-open {
-      border-bottom: 1px solid rgba(255, 0, 255, 0.2);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
     }
 
     .nav-links.mobile-open a {
@@ -239,7 +247,7 @@ import { CASINO_CONFIG } from '../consts';
     }
 
     .nav-actions.mobile-open {
-      border-top: 1px solid rgba(255, 0, 255, 0.2);
+      border-top: 1px solid rgba(212, 175, 55, 0.2);
     }
 
     .nav-actions.mobile-open .btn-primary,
