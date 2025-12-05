@@ -62,18 +62,13 @@ import { CASINO_CONFIG } from '../consts';
     width: auto;
     max-width: 200px;
     object-fit: contain;
-    filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.8));
-    animation: logoGlow 3s ease-in-out infinite alternate;
-    transition: transform 0.3s ease;
+    filter: drop-shadow(0 2px 8px rgba(212, 175, 55, 0.4));
+    transition: transform 0.3s ease, filter 0.3s ease;
   }
 
   .logo img:hover {
     transform: scale(1.05);
-  }
-
-  @keyframes logoGlow {
-    from { filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.8)); }
-    to { filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.8)); }
+    filter: drop-shadow(0 2px 12px rgba(212, 175, 55, 0.6));
   }
 
   .nav-links {
