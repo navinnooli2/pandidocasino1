@@ -1,6 +1,8 @@
 ---
 const today = new Date();
 const AFFILIATE_LINK = "https://m-traff.net/yk5QY2vs";
+const currentLang = Astro.props.currentLang || 'fr';
+const isEnglish = currentLang === 'en';
 ---
 
 <footer>
@@ -8,13 +10,15 @@ const AFFILIATE_LINK = "https://m-traff.net/yk5QY2vs";
     <div class="footer-section">
       <h3>Pandido Casino</h3>
       <p>
-        Pandido Casino offre une expérience de jeu en ligne exceptionnelle avec plus de 1800 jeux, des bonus généreux et un service client 24/7.
+        {isEnglish 
+          ? "Pandido Casino offers an exceptional online gaming experience with over 1800 games, generous bonuses and 24/7 customer service."
+          : "Pandido Casino offre une expérience de jeu en ligne exceptionnelle avec plus de 1800 jeux, des bonus généreux et un service client 24/7."}
       </p>
     </div>
 
     <div class="footer-section">
-      <h4>Jeu Responsable</h4>
-      <p class="age-warning">18+ Uniquement</p>
+      <h4>{isEnglish ? "Responsible Gaming" : "Jeu Responsable"}</h4>
+      <p class="age-warning">{isEnglish ? "18+ Only" : "18+ Uniquement"}</p>
       <div class="responsible-links">
         <a href="https://www.gamcare.org.uk" target="_blank" rel="noopener">GamCare</a>
         <a href="https://www.gamblersanonymous.org" target="_blank" rel="noopener">Gamblers Anonymous</a>
@@ -22,20 +26,22 @@ const AFFILIATE_LINK = "https://m-traff.net/yk5QY2vs";
     </div>
 
     <div class="footer-section">
-      <h4>Aide & Support</h4>
-      <p>Ligne d'aide: <a href="tel:0974751313">09 74 75 13 13</a></p>
-      <p>Email: <a href="mailto:support@pandido.fr">support@pandido.fr</a></p>
+      <h4>{isEnglish ? "Help & Support" : "Aide & Support"}</h4>
+      <p>{isEnglish ? "Help line: " : "Ligne d'aide: "}<a href="tel:0974751313">09 74 75 13 13</a></p>
+      <p>Email: <a href={isEnglish ? "mailto:support@pandido.com" : "mailto:support@pandido.fr"}>{isEnglish ? "support@pandido.com" : "support@pandido.fr"}</a></p>
       <p class="help-text">
-        Si vous avez des problèmes de jeu, contactez immédiatement notre ligne d'aide.
+        {isEnglish 
+          ? "If you have gambling problems, contact our help line immediately."
+          : "Si vous avez des problèmes de jeu, contactez immédiatement notre ligne d'aide."}
       </p>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; {today.getFullYear()} Pandido Casino. Tous droits réservés.</p>
+    <p>&copy; {today.getFullYear()} Pandido Casino. {isEnglish ? "All rights reserved." : "Tous droits réservés."}</p>
     <div class="footer-links">
-      <span>• Licence de jeu délivrée par l'ARJEL</span>
-      <span>• Jeu responsable 18+</span>
+      <span>• {isEnglish ? "Gaming license issued by ARJEL" : "Licence de jeu délivrée par l'ARJEL"}</span>
+      <span>• {isEnglish ? "Responsible gaming 18+" : "Jeu responsable 18+"}</span>
     </div>
   </div>
 </footer>

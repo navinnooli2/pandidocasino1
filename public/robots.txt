@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: https://m-traff.net/yk5QY2vs
+
+Sitemap: https://pandido-casino1.fr/sitemap.xml
+
