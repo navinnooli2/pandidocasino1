@@ -1,0 +1,229 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageLayout from '../components/PageLayout.astro';
+import { CASINO_CONFIG } from '../consts';
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead 
+			title={`Casino en Direct - Vrais Croupiers, Vraies Victoires - ${CASINO_CONFIG.name}`} 
+			description={`Jeux de casino en direct avec vrais croupiers chez ${CASINO_CONFIG.name}. Blackjack, Roulette, Baccarat en direct avec streaming HD et gameplay interactif.`} 
+		/>
+	</head>
+	<body>
+		<Header />
+		<PageLayout />
+		<main>
+			<section class="page-hero">
+				<div class="container">
+					<h1>Casino en Direct - Vrais Croupiers, Vraies Victoires</h1>
+					<p class="hero-subtitle">
+						Entrez dans l'atmosphère authentique du casino sans quitter votre domicile. Chez {CASINO_CONFIG.name}, nos jeux de croupier en direct apportent l'excitation d'un vrai casino directement sur votre écran, avec des croupiers professionnels, un streaming HD et un gameplay interactif qui vous donnera l'impression d'être assis aux tables de Monte Carlo.
+					</p>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Jeux de Casino en Direct</h2>
+					
+					<div class="game-grid">
+						<div class="game-card">
+							<div class="game-image">Crazy Time</div>
+							<h3>Crazy Time</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Rejoindre la Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">Blackjack en Direct</div>
+							<h3>Live Blackjack</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Rejoindre la Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">Roulette en Direct</div>
+							<h3>Live Roulette</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Rejoindre la Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">Baccarat en Direct</div>
+							<h3>Live Baccarat</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Rejoindre la Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">Monopoly Live</div>
+							<h3>Monopoly Live</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Rejoindre la Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">Dream Catcher</div>
+							<h3>Dream Catcher</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Rejoindre la Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">Lightning Roulette</div>
+							<h3>Lightning Roulette</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Rejoindre la Table</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">Poker en Direct</div>
+							<h3>Live Poker</h3>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Rejoindre la Table</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Pourquoi Choisir le Casino en Direct ?</h2>
+
+					<h3>Expérience Authentique</h3>
+					<p>
+						Vrais croupiers, vraies cartes, vraies roues. Regardez chaque mélange, chaque tour et chaque donne en HD cristalline. Nos studios sont équipés de plusieurs angles de caméra, vous donnant une place au premier rang pour toute l'action.
+					</p>
+
+					<h3>Gameplay Interactif</h3>
+					<p>
+						Discutez avec les croupiers et les autres joueurs en temps réel. Nos croupiers professionnels sont amicaux, engageants et créent une atmosphère accueillante qui rend chaque session mémorable. Posez des questions, célébrez les victoires et profitez de l'aspect social du jeu de casino.
+					</p>
+
+					<h3>Équitable et Transparent</h3>
+					<p>
+						Chaque carte distribuée et chaque tour de roue se produit juste sous vos yeux. Pas de RNG, pas d'algorithmes - juste un gameplay pur et transparent auquel vous pouvez faire confiance. Tous nos jeux en direct sont réglementés et certifiés pour l'équité.
+					</p>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Types de Jeux de Casino en Direct</h2>
+					<div class="table-container">
+						<table>
+							<thead>
+								<tr>
+									<th>Type de Jeu</th>
+									<th>Tables Disponibles</th>
+									<th>Plage de Paris</th>
+									<th>RTP</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Roulette en Direct</td>
+									<td>25+</td>
+									<td>€0.10 - €10,000</td>
+									<td>97.30%</td>
+								</tr>
+								<tr>
+									<td>Blackjack en Direct</td>
+									<td>40+</td>
+									<td>€1 - €5,000</td>
+									<td>99.28%</td>
+								</tr>
+								<tr>
+									<td>Baccarat en Direct</td>
+									<td>15+</td>
+									<td>€1 - €15,000</td>
+									<td>98.94%</td>
+								</tr>
+								<tr>
+									<td>Poker en Direct</td>
+									<td>12+</td>
+									<td>€0.50 - €2,500</td>
+									<td>97.84%</td>
+								</tr>
+								<tr>
+									<td>Jeux de Télévision</td>
+									<td>8+</td>
+									<td>€0.10 - €1,000</td>
+									<td>94.50% - 96.20%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Points Forts des Jeux de Télévision</h2>
+
+					<h3>Crazy Time</h3>
+					<p>
+						Le jeu de télévision en direct le plus populaire de la planète. Faites tourner la roue massive pour des multiplicateurs jusqu'à 20,000x, avec quatre rounds bonus incluant Cash Hunt, Pachinko, Coin Flip et le légendaire bonus Crazy Time.
+					</p>
+
+					<h3>Monopoly Live</h3>
+					<p>
+						Combine le jeu de société classique avec l'action du casino en direct. Atterrissez sur des segments bonus pour déclencher le monde Monopoly 3D où M. Monopoly se promène sur le plateau en collectant des prix et des multiplicateurs.
+					</p>
+
+					<h3>Dream Catcher</h3>
+					<p>
+						Jeu de roue d'argent simple mais palpitant. Pariez sur les numéros 1, 2, 5, 10, 20 ou 40, et regardez la roue tourner. Atterrissez sur des multiplicateurs pour des gains boostés jusqu'à 7x.
+					</p>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Tables VIP</h2>
+					<p>
+						Pour les gros parieurs recherchant des expériences exclusives, nos tables VIP offrent :
+					</p>
+					<ul>
+						<li>Limites de paris plus élevées jusqu'à €50,000 par main</li>
+						<li>Croupiers dédiés et service personnalisé</li>
+						<li>Tables privées disponibles sur demande</li>
+						<li>Gameplay plus rapide avec temps d'attente réduits</li>
+						<li>Support client prioritaire</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Fournisseurs de Casino en Direct</h2>
+					<p>
+						Nous nous associons avec les meilleurs studios de casino en direct de l'industrie :
+					</p>
+					<ul>
+						<li><strong>Evolution Gaming</strong> - Le leader incontesté de l'innovation en casino en direct</li>
+						<li><strong>Pragmatic Play Live</strong> - Tables de haute qualité avec animateurs engageants</li>
+						<li><strong>Ezugi</strong> - Sélection de jeux diversifiée avec variantes uniques</li>
+						<li><strong>Authentic Gaming</strong> - Vrais casinos diffusés en direct</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Conseils de Jeu</h2>
+					<p>
+						Maîtrisez les bases avant de vous lancer dans les tables à enjeux élevés. Commencez avec des limites de paris plus basses pour comprendre le flux du jeu et les modèles des croupiers. Profitez des paris latéraux pour une excitation supplémentaire, mais rappelez-vous qu'ils ont généralement des marges de maison plus élevées. Plus important encore, fixez des limites de temps et d'argent avant de commencer à jouer.
+					</p>
+				</div>
+			</section>
+
+			<section class="cta-section">
+				<div class="container">
+					<h2>Rejoignez une table chez {CASINO_CONFIG.name}</h2>
+					<p>Vivez le frisson du jeu de croupier en direct avec des croupiers professionnels et une action en temps réel.</p>
+					<a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Jouer en Direct</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+

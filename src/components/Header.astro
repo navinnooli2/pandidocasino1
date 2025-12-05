@@ -1,21 +1,22 @@
 ---
-import { AFFILIATE_LINK } from '../consts';
+import { CASINO_CONFIG } from '../consts';
 ---
 
 <header>
 	<nav>
 		<div class="logo">
-			<a href="/">Pandido Casino</a>
+			<a href="/">{CASINO_CONFIG.shortName} Casino</a>
 		</div>
 		<div class="nav-links">
-			<a href="#paiements">Paiements</a>
-			<a href="#bonus">Bonus</a>
-			<a href="#vip">Club VIP</a>
-			<a href="#jeux">Machines à Sous</a>
+			<a href="/paiements">Paiements</a>
+			<a href="/bonus">Bonus</a>
+			<a href="/sports">Sports</a>
+			<a href="/live-casino">Live Casino</a>
+			<a href="/slots">Slots</a>
 		</div>
 		<div class="nav-actions">
-			<a href={AFFILIATE_LINK} class="btn-primary" target="_blank">Jouer Maintenant</a>
-			<a href={AFFILIATE_LINK} class="btn-secondary" target="_blank">Connexion</a>
+			<a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Jouer Maintenant</a>
+			<a href={CASINO_CONFIG.affiliateLink} class="btn-secondary" target="_blank">Connexion</a>
 		</div>
 		<button class="mobile-menu-toggle" aria-label="Toggle menu">
 			<span></span>

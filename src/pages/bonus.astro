@@ -1,0 +1,244 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageLayout from '../components/PageLayout.astro';
+import { CASINO_CONFIG } from '../consts';
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead 
+			title={`Bonus de Bienvenue - ${CASINO_CONFIG.welcomeBonus.percentage} jusqu'à ${CASINO_CONFIG.welcomeBonus.maxAmount} - ${CASINO_CONFIG.name}`} 
+			description={`Réclamez votre bonus de bienvenue ${CASINO_CONFIG.welcomeBonus.percentage} jusqu'à ${CASINO_CONFIG.welcomeBonus.maxAmount} + ${CASINO_CONFIG.welcomeBonus.freeSpins} tours gratuits chez ${CASINO_CONFIG.name}.`} 
+		/>
+	</head>
+	<body>
+		<Header />
+		<PageLayout />
+		<main>
+			<section class="page-hero">
+				<div class="container">
+					<h1>Bonus de Bienvenue - Réclamez {CASINO_CONFIG.welcomeBonus.percentage} jusqu'à {CASINO_CONFIG.welcomeBonus.maxAmount} + {CASINO_CONFIG.welcomeBonus.freeSpins} tours gratuits</h1>
+					<p class="hero-subtitle">
+						Les nouveaux guerriers entrant dans l'arène {CASINO_CONFIG.shortName} reçoivent un package de bienvenue légendaire d'une valeur allant jusqu'à {CASINO_CONFIG.welcomeBonus.maxAmount} plus {CASINO_CONFIG.welcomeBonus.freeSpins} tours gratuits répartis sur vos quatre premiers dépôts. Cette offre exclusive vous donne une puissance de feu maximale pour explorer notre vaste collection de jeux et poursuivre ces victoires épiques.
+					</p>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Détails du Package de Bienvenue</h2>
+					
+					<div class="bonus-card">
+						<h3>Premier Dépôt</h3>
+						<p><strong>MEILLEURE VALEUR</strong></p>
+						<p><strong>{CASINO_CONFIG.welcomeBonus.percentage} jusqu'à {CASINO_CONFIG.welcomeBonus.maxAmount}</strong></p>
+						<p>+ 200 Tours Gratuits</p>
+						<ul class="bonus-features">
+							<li>Dépôt minimum : {CASINO_CONFIG.welcomeBonus.minDeposit}</li>
+							<li>Tours gratuits sur Book of Dead</li>
+							<li>Exigence de mise : {CASINO_CONFIG.welcomeBonus.wagering}x</li>
+							<li>Valable pendant 30 jours</li>
+						</ul>
+						<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Réclamer Maintenant</a>
+					</div>
+
+					<div class="bonus-card">
+						<h3>Deuxième Dépôt</h3>
+						<p><strong>100% jusqu'à €750</strong></p>
+						<p>+ 75 Tours Gratuits</p>
+						<ul class="bonus-features">
+							<li>Dépôt minimum : {CASINO_CONFIG.welcomeBonus.minDeposit}</li>
+							<li>Tours gratuits sur Starburst</li>
+							<li>Exigence de mise : {CASINO_CONFIG.welcomeBonus.wagering}x</li>
+							<li>Valable pendant 30 jours</li>
+						</ul>
+						<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Réclamer Maintenant</a>
+					</div>
+
+					<div class="bonus-card">
+						<h3>Troisième Dépôt</h3>
+						<p><strong>75% jusqu'à €750</strong></p>
+						<p>+ 50 Tours Gratuits</p>
+						<ul class="bonus-features">
+							<li>Dépôt minimum : {CASINO_CONFIG.welcomeBonus.minDeposit}</li>
+							<li>Tours gratuits sur Gonzo's Quest</li>
+							<li>Exigence de mise : {CASINO_CONFIG.welcomeBonus.wagering}x</li>
+							<li>Valable pendant 30 jours</li>
+						</ul>
+						<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Réclamer Maintenant</a>
+					</div>
+
+					<div class="bonus-card">
+						<h3>Quatrième Dépôt</h3>
+						<p><strong>50% jusqu'à €500</strong></p>
+						<p>+ 25 Tours Gratuits</p>
+						<ul class="bonus-features">
+							<li>Dépôt minimum : {CASINO_CONFIG.welcomeBonus.minDeposit}</li>
+							<li>Tours gratuits sur Big Bass Bonanza</li>
+							<li>Exigence de mise : {CASINO_CONFIG.welcomeBonus.wagering}x</li>
+							<li>Valable pendant 30 jours</li>
+						</ul>
+						<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Réclamer Maintenant</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Comment Réclamer Votre Bonus de Bienvenue</h2>
+					
+					<div class="step-grid">
+						<div class="step-item">
+							<div class="step-number">1</div>
+							<h3>Créer Votre Compte</h3>
+							<p>Créez votre compte {CASINO_CONFIG.name} en fournissant des informations de base incluant email, nom d'utilisateur et mot de passe. Le processus d'inscription prend moins de deux minutes.</p>
+						</div>
+
+						<div class="step-item">
+							<div class="step-number">2</div>
+							<h3>Vérifier Votre Email</h3>
+							<p>Vérifiez votre boîte de réception pour un email de vérification et cliquez sur le lien de confirmation. Cela active votre compte et vous rend éligible au package de bienvenue.</p>
+						</div>
+
+						<div class="step-item">
+							<div class="step-number">3</div>
+							<h3>Effectuer Votre Premier Dépôt</h3>
+							<p>Naviguez vers la caisse, sélectionnez votre méthode de paiement préférée et déposez au moins {CASINO_CONFIG.welcomeBonus.minDeposit}. Le bonus {CASINO_CONFIG.welcomeBonus.percentage} est automatiquement crédité sur votre compte.</p>
+						</div>
+
+						<div class="step-item">
+							<div class="step-number">4</div>
+							<h3>Recevoir Vos Tours Gratuits</h3>
+							<p>Les tours gratuits sont crédités immédiatement après la confirmation de votre dépôt. Accédez-y en ouvrant le jeu de machine à sous désigné et commencez à jouer.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Conditions Générales des Bonus</h2>
+
+					<h3>Exigences de Mise</h3>
+					<p>
+						Tous les fonds bonus sont soumis à une exigence de mise de {CASINO_CONFIG.welcomeBonus.wagering}x. Cela signifie que vous devez miser le montant du bonus {CASINO_CONFIG.welcomeBonus.wagering} fois avant le retrait. Par exemple, un bonus de €100 nécessite €4,000 en mises totales.
+					</p>
+
+					<h4>Exemple de Calcul :</h4>
+					<ul>
+						<li>Dépôt : €100</li>
+						<li>Bonus reçu : €250 ({CASINO_CONFIG.welcomeBonus.percentage})</li>
+						<li>Total des fonds bonus : €250</li>
+						<li>Exigence de mise : €250 × {CASINO_CONFIG.welcomeBonus.wagering} = €10,000</li>
+					</ul>
+
+					<h3>Contributions des Jeux</h3>
+					<p>Différents jeux contribuent à des pourcentages variables aux exigences de mise :</p>
+					<div class="table-container">
+						<table>
+							<thead>
+								<tr>
+									<th>Type de Jeu</th>
+									<th>Contribution</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Machines à sous</td>
+									<td>100%</td>
+								</tr>
+								<tr>
+									<td>Cartes à gratter</td>
+									<td>100%</td>
+								</tr>
+								<tr>
+									<td>Keno</td>
+									<td>100%</td>
+								</tr>
+								<tr>
+									<td>Jeux de table</td>
+									<td>10%</td>
+								</tr>
+								<tr>
+									<td>Video Poker</td>
+									<td>10%</td>
+								</tr>
+								<tr>
+									<td>Casino en direct</td>
+									<td>10%</td>
+								</tr>
+								<tr>
+									<td>Jackpots progressifs</td>
+									<td>0%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<h3>Règle de Mise Maximale</h3>
+					<p>
+						Lorsque vous jouez avec des fonds bonus, la mise maximale autorisée est de €5 par tour ou €0.50 par ligne de paiement. Dépasser cette limite peut annuler votre bonus et tous les gains associés.
+					</p>
+
+					<h3>Limites de Temps</h3>
+					<p>
+						Les bonus doivent être utilisés dans les 30 jours suivant l'activation. Les tours gratuits expirent après 7 jours s'ils ne sont pas utilisés. Tous les fonds bonus ou tours non utilisés sont automatiquement supprimés après la période d'expiration.
+					</p>
+
+					<h3>Restrictions de Retrait</h3>
+					<p>
+						Les retraits ne sont pas autorisés tant que les exigences de mise ne sont pas entièrement satisfaites. Demander un retrait avant l'achèvement entraînera la perte de tous les fonds bonus et des gains qui en découlent.
+					</p>
+
+					<h3>Plafond de Gains Maximum</h3>
+					<p>
+						Les gains des tours gratuits sont plafonnés à €100 par bonus. Tout gain excédentaire est supprimé lorsque les exigences de mise sont terminées.
+					</p>
+
+					<div class="important-note">
+						<p><strong>Important :</strong> Ce bonus est conçu pour améliorer votre divertissement, pas pour créer une pression financière. Définissez des limites de dépôt avant de réclamer des bonus, et ne misez jamais plus que ce que vous pouvez vous permettre de perdre.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Questions Fréquentes</h2>
+
+					<div class="faq-item">
+						<h3>Puis-je retirer mon dépôt immédiatement après avoir réclamé le bonus ?</h3>
+						<p>Non. Retirer avant de satisfaire aux exigences de mise entraîne la perte de tous les fonds bonus et des gains.</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>Dois-je réclamer les quatre bonus ?</h3>
+						<p>Non. Chaque bonus est optionnel et peut être réclamé indépendamment. Vous pouvez ignorer les bonus si vous préférez jouer sans restrictions.</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>Que se passe-t-il si je n'utilise pas mes tours gratuits ?</h3>
+						<p>Les tours gratuits non utilisés expirent après 7 jours et ne peuvent pas être récupérés.</p>
+					</div>
+
+					<div class="faq-item">
+						<h3>Puis-je jouer aux jeux de casino en direct avec des fonds bonus ?</h3>
+						<p>Oui, mais les jeux de casino en direct ne contribuent qu'à 10% aux exigences de mise, ce qui les rend moins efficaces pour libérer les bonus.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="cta-section">
+				<div class="container">
+					<h2>Prêt à réclamer votre trône ?</h2>
+					<p>Rejoignez {CASINO_CONFIG.name} aujourd'hui et commencez votre voyage avec le package de bienvenue le plus généreux du royaume.</p>
+					<a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Réclamer Mon Bonus</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+

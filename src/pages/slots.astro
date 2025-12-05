@@ -1,0 +1,246 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageLayout from '../components/PageLayout.astro';
+import { CASINO_CONFIG } from '../consts';
+---
+
+<!doctype html>
+<html lang="fr">
+	<head>
+		<BaseHead 
+			title={`Machines à Sous en Ligne - ${CASINO_CONFIG.stats.slots} Jeux - ${CASINO_CONFIG.name}`} 
+			description={`Jouez à plus de ${CASINO_CONFIG.stats.slots} machines à sous en ligne chez ${CASINO_CONFIG.name}. Megaways, Cluster Pays, jackpots progressifs et plus.`} 
+		/>
+	</head>
+	<body>
+		<Header />
+		<PageLayout />
+		<main>
+			<section class="page-hero">
+				<div class="container">
+					<h1>Machines à Sous - {CASINO_CONFIG.stats.slots} Jeux Disponibles</h1>
+					<p class="hero-subtitle">
+						Plongez dans notre collection massive de machines à sous en ligne avec plus de {CASINO_CONFIG.stats.slots} titres des meilleurs développeurs du monde. Des classiques intemporels aux innovations révolutionnaires, trouvez votre machine à sous parfaite chez {CASINO_CONFIG.name}.
+					</p>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Meilleures Machines à Sous</h2>
+					
+					<div class="game-grid">
+						<div class="game-card">
+							<div class="game-image">Big Bass Bonanza</div>
+							<h3>Big Bass Bonanza</h3>
+							<p>RTP: 96.71% | Volatilité: Élevée</p>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Jouer Maintenant</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">King Kong Cash</div>
+							<h3>King Kong Cash</h3>
+							<p>RTP: 96.50% | Volatilité: Élevée</p>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Jouer Maintenant</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">9 Masks Of Fire</div>
+							<h3>9 Masks Of Fire</h3>
+							<p>RTP: 96.20% | Volatilité: Moyenne</p>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Jouer Maintenant</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">Big Bass Boxing</div>
+							<h3>Big Bass Boxing</h3>
+							<p>RTP: 96.80% | Volatilité: Élevée</p>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Jouer Maintenant</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">Razor Shark</div>
+							<h3>Razor Shark</h3>
+							<p>RTP: 96.70% | Volatilité: Élevée</p>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Jouer Maintenant</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">Book of Dead</div>
+							<h3>Book of Dead</h3>
+							<p>RTP: 96.21% | Volatilité: Élevée</p>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Jouer Maintenant</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">Gates of Olympus</div>
+							<h3>Gates of Olympus</h3>
+							<p>RTP: 96.50% | Volatilité: Élevée</p>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Jouer Maintenant</a>
+						</div>
+
+						<div class="game-card">
+							<div class="game-image">Sweet Bonanza</div>
+							<h3>Sweet Bonanza</h3>
+							<p>RTP: 96.48% | Volatilité: Élevée</p>
+							<a href={CASINO_CONFIG.affiliateLink} class="btn-game" target="_blank">Jouer Maintenant</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Types de Machines à Sous</h2>
+
+					<h3>Megaways</h3>
+					<p>
+						Plus de 100+ machines à sous Megaways avec jusqu'à 117,649 façons de gagner. Ces jeux révolutionnaires offrent des mécaniques de gameplay dynamiques où le nombre de façons de gagner change à chaque tour.
+					</p>
+
+					<h3>Cluster Pays</h3>
+					<p>
+						Plus de 100+ machines à sous Cluster Pays avec jusqu'à 500 façons de gagner. Gagnez en formant des clusters de symboles adjacents au lieu de lignes de paiement traditionnelles.
+					</p>
+
+					<h3>Jackpots Progressifs</h3>
+					<p>
+						Chassez des jackpots progressifs qui peuvent atteindre des millions. Chaque mise contribue au jackpot, créant des prix de vie qui changent la vie.
+					</p>
+
+					<h3>Machines à Sous Classiques</h3>
+					<p>
+						Retournez aux bases avec nos machines à sous classiques à 3 rouleaux. Simple, élégant et intemporel.
+					</p>
+
+					<h3>Machines à Sous Vidéo</h3>
+					<p>
+						Profitez de graphismes époustouflants, d'animations fluides et de fonctionnalités bonus innovantes avec nos machines à sous vidéo modernes.
+					</p>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Statistiques des Machines à Sous</h2>
+					<div class="table-container">
+						<table>
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Nombre de Jeux</th>
+									<th>Façons de Gagner Max</th>
+									<th>RTP Moyen</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Machines à Sous Standard</td>
+									<td>2,000+</td>
+									<td>4,240</td>
+									<td>96.5%</td>
+								</tr>
+								<tr>
+									<td>Megaways</td>
+									<td>100+</td>
+									<td>117,649</td>
+									<td>96.7%</td>
+								</tr>
+								<tr>
+									<td>Cluster Pays</td>
+									<td>100+</td>
+									<td>500</td>
+									<td>96.4%</td>
+								</tr>
+								<tr>
+									<td>Jackpots Progressifs</td>
+									<td>50+</td>
+									<td>Variable</td>
+									<td>94.0% - 96.0%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Fournisseurs de Machines à Sous</h2>
+					<p>
+						Nous proposons des machines à sous des meilleurs développeurs de l'industrie :
+					</p>
+					<ul>
+						<li><strong>Pragmatic Play</strong> - Leaders en innovation et qualité</li>
+						<li><strong>NetEnt</strong> - Graphismes de classe mondiale</li>
+						<li><strong>Microgaming</strong> - Créateurs de Mega Moolah</li>
+						<li><strong>Play'n GO</strong> - Spécialistes des jeux mobiles</li>
+						<li><strong>Yggdrasil</strong> - Mécaniques de jeu uniques</li>
+						<li><strong>Red Tiger</strong> - Optimisation des gains quotidiens</li>
+						<li><strong>Big Time Gaming</strong> - Inventeurs de Megaways</li>
+						<li><strong>Quickspin</strong> - Narratives engageantes</li>
+						<li><strong>Thunderkick</strong> - Design artistique</li>
+						<li><strong>Nolimit City</strong> - Volatilité extrême</li>
+						<li><strong>Push Gaming</strong> - Cluster Pays innovants</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Fonctionnalités des Machines à Sous</h2>
+
+					<h3>Tours Gratuits</h3>
+					<p>
+						Activez les rounds de tours gratuits avec des multiplicateurs et des symboles spéciaux pour maximiser vos gains.
+					</p>
+
+					<h3>Symboles Wild</h3>
+					<p>
+						Les symboles wild remplacent d'autres symboles pour créer des combinaisons gagnantes.
+					</p>
+
+					<h3>Symboles Scatter</h3>
+					<p>
+						Atterrissez sur des symboles scatter pour déclencher des fonctionnalités bonus et des tours gratuits.
+					</p>
+
+					<h3>Multiplicateurs</h3>
+					<p>
+						Boostez vos gains avec des multiplicateurs qui peuvent atteindre jusqu'à 10,000x votre mise.
+					</p>
+
+					<h3>Jeux Bonus</h3>
+					<p>
+						Accédez à des mini-jeux interactifs avec des prix supplémentaires et des mécaniques de gameplay uniques.
+					</p>
+				</div>
+			</section>
+
+			<section class="content-section">
+				<div class="container">
+					<h2>Conseils pour Jouer aux Machines à Sous</h2>
+					<ul>
+						<li><strong>Comprenez le RTP</strong> - Recherchez des machines à sous avec un RTP (Retour au Joueur) élevé, généralement 96% ou plus</li>
+						<li><strong>Gérez votre Bankroll</strong> - Fixez un budget et respectez-le. Ne misez jamais plus que ce que vous pouvez vous permettre de perdre</li>
+						<li><strong>Choisissez la Volatilité</strong> - Les machines à sous à faible volatilité offrent des gains plus fréquents mais plus petits, tandis que la haute volatilité offre des gains plus rares mais plus importants</li>
+						<li><strong>Profitez des Bonus</strong> - Utilisez les bonus de bienvenue et les tours gratuits pour étendre votre temps de jeu</li>
+						<li><strong>Jouez pour le Plaisir</strong> - Les machines à sous sont conçues pour le divertissement. Profitez de l'expérience sans vous concentrer uniquement sur les gains</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="cta-section">
+				<div class="container">
+					<h2>Explorez Notre Collection de {CASINO_CONFIG.stats.slots} Machines à Sous</h2>
+					<p>Rejoignez {CASINO_CONFIG.name} aujourd'hui et découvrez votre machine à sous favorite parmi notre vaste sélection.</p>
+					<a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Jouer aux Machines à Sous</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
