@@ -42,10 +42,25 @@ const AFFILIATE_LINK = "https://m-traff.net/yk5QY2vs";
 
 <style>
   footer {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    background: linear-gradient(135deg, #050508 0%, #0a0a0f 50%, #050508 100%);
     color: #ffffff;
     padding: 3rem 2rem 1rem;
     margin-top: 4rem;
+    border-top: 2px solid rgba(255, 0, 255, 0.3);
+    box-shadow: 0 -5px 30px rgba(255, 0, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #ff00ff, #00ffff, #ff00ff, transparent);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
   }
 
   .footer-content {
@@ -61,10 +76,11 @@ const AFFILIATE_LINK = "https://m-traff.net/yk5QY2vs";
     color: #ffffff;
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    background: linear-gradient(135deg, #4a7c59 0%, #3a6347 100%);
+    background: linear-gradient(135deg, #ff00ff 0%, #9d00ff 50%, #0066ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.8));
   }
 
   .footer-section h4 {
@@ -80,19 +96,28 @@ const AFFILIATE_LINK = "https://m-traff.net/yk5QY2vs";
   }
 
   .footer-section a {
-    color: #4a7c59;
+    color: #00ffff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
   }
 
   .footer-section a:hover {
-    color: #3a6347;
+    color: #ff00ff;
+    text-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
   }
 
   .age-warning {
     font-weight: 700;
-    color: #ff6b6b !important;
+    color: #ff00ff !important;
     margin-bottom: 1rem !important;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.6);
+    animation: warningPulse 2s ease-in-out infinite;
+  }
+
+  @keyframes warningPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
   }
 
   .responsible-links {
@@ -111,7 +136,7 @@ const AFFILIATE_LINK = "https://m-traff.net/yk5QY2vs";
     max-width: 1400px;
     margin: 0 auto;
     padding-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 0, 255, 0.2);
     text-align: center;
   }
 

@@ -14,4 +14,13 @@ export default defineConfig({
       enabled: true,
     },
   }),
+  build: {
+    format: 'preserve',
+    inlineStylesheets: 'auto',
+  },
+  vite: {
+    build: {
+      minify: false,
+    },
+  },
 });

@@ -335,6 +335,22 @@ import { SITE_TITLE, SITE_DESCRIPTION, AFFILIATE_LINK } from '../consts';
     padding: 0 2rem;
   }
 
+  /* Additional neon effects for sections */
+  section {
+    position: relative;
+  }
+
+  section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 0, 255, 0.5), transparent);
+    opacity: 0.5;
+  }
+
   @media (max-width: 640px) {
     .container {
       padding: 0 1rem;
