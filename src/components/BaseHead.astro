@@ -7,11 +7,20 @@ interface Props {
 	title: string;
 	description: string;
 	image?: string;
+	currentLang?: string;
 }
 
+const currentLang = Astro.props.currentLang || 'fr';
 const canonicalURL = new URL(Astro.url.pathname, 'https://pandido-casino1.fr');
+const baseURL = 'https://pandido-casino1.fr';
 
 const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
+
+// Generate alternate language URLs
+const alternateUrls = {
+	fr: baseURL + '/',
+	en: baseURL + '/en/'
+};
 ---
 
 <!-- Global Metadata -->
@@ -27,6 +36,11 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
+
+<!-- Alternate Language URLs -->
+<link rel="alternate" hreflang="fr" href={alternateUrls.fr} />
+<link rel="alternate" hreflang="en" href={alternateUrls.en} />
+<link rel="alternate" hreflang="x-default" href={alternateUrls.fr} />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>

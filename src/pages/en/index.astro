@@ -1,0 +1,335 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { AFFILIATE_LINK } from '../../consts';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead 
+      title="Pandido Casino - 200% Bonus up to €5,000 | Online Casino" 
+      description="Pandido Casino: Online casino with 200% welcome bonus up to €5,000. Over 1800 casino games, fast withdrawals and 24/7 customer service. Join Pandido Casino today!"
+      image="https://res.cloudinary.com/dzwk5oovk/image/upload/v1764931760/Pandido-Casino-Review_uqtsoy.png"
+      currentLang="en"
+    />
+  </head>
+  <body>
+    <Header currentLang="en" />
+    <div class="container">
+      <Breadcrumb />
+    </div>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Pandido Casino - 200% Bonus up to €5,000 | Online Casino</h1>
+          <p class="hero-subtitle">
+            Enjoy a <strong>200% welcome bonus up to €5,000</strong> and discover over 1800 online casino games.
+          </p>
+          <div class="hero-actions">
+            <a href={AFFILIATE_LINK} class="btn-hero-primary" target="_blank">Play Now</a>
+            <a href="#bonus" class="btn-hero-secondary">View Bonuses</a>
+          </div>
+          <p class="hero-disclaimer">
+            Wagering requirements: 35x the bonus amount. Game contribution varies. 18+. Gambling involves risks.
+          </p>
+        </div>
+      </section>
+
+      <!-- Feature Strip -->
+      <section class="feature-strip">
+        <div class="feature-item">
+          <span class="feature-icon">🎰</span>
+          <span>1800+ Games</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">💰</span>
+          <span>200% Bonus</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">⚡</span>
+          <span>Fast Withdrawals</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🛡️</span>
+          <span>100% Secure</span>
+        </div>
+      </section>
+
+      <!-- Popular Games -->
+      <section id="games" class="games-section">
+        <h2>Popular Games</h2>
+				<div class="games-grid">
+					<div class="game-card">
+						<div class="game-image">
+							<img src="/games/book-of-dead.svg" alt="Book of Dead" />
+						</div>
+						<h3>Book of Dead</h3>
+						<a href={AFFILIATE_LINK} class="btn-game" target="_blank">Play</a>
+					</div>
+					<div class="game-card">
+						<div class="game-image">
+							<img src="/games/gates-of-olympus.svg" alt="Gates of Olympus" />
+						</div>
+						<h3>Gates of Olympus</h3>
+						<a href={AFFILIATE_LINK} class="btn-game" target="_blank">Play</a>
+					</div>
+					<div class="game-card">
+						<div class="game-image">
+							<img src="/games/book-of-ra.svg" alt="Book of Ra" />
+						</div>
+						<h3>Book of Ra</h3>
+						<a href={AFFILIATE_LINK} class="btn-game" target="_blank">Play</a>
+					</div>
+					<div class="game-card">
+						<div class="game-image">
+							<img src="/games/big-bass-boxing.svg" alt="Big Bass Boxing" />
+						</div>
+						<h3>Big Bass Boxing</h3>
+						<a href={AFFILIATE_LINK} class="btn-game" target="_blank">Play</a>
+					</div>
+					<div class="game-card">
+						<div class="game-image">
+							<img src="/games/sweet-bonanza.svg" alt="Sweet Bonanza" />
+						</div>
+						<h3>Sweet Bonanza</h3>
+						<a href={AFFILIATE_LINK} class="btn-game" target="_blank">Play</a>
+					</div>
+					<div class="game-card">
+						<div class="game-image">
+							<img src="/games/big-bass-bonanza.svg" alt="Big Bass Bonanza" />
+						</div>
+						<h3>Big Bass Bonanza</h3>
+						<a href={AFFILIATE_LINK} class="btn-game" target="_blank">Play</a>
+					</div>
+				</div>
+      </section>
+
+      <!-- Promotions -->
+      <section id="bonus" class="promotions-section">
+        <h2>Other Promotions</h2>
+        <div class="promotions-grid">
+          <div class="promo-card">
+            <h3>Weekly Bonus</h3>
+            <p>Reload your account every week and receive a 50% bonus up to €1,000.</p>
+            <a href={AFFILIATE_LINK} class="btn-promo" target="_blank">Claim</a>
+          </div>
+          <div class="promo-card">
+            <h3>VIP Cashback</h3>
+            <p>VIP members benefit from 15% cashback on all weekly losses.</p>
+            <a href={AFFILIATE_LINK} class="btn-promo" target="_blank">Join VIP</a>
+          </div>
+          <div class="promo-card">
+            <h3>Slot Tournaments</h3>
+            <p>Participate in daily tournaments and win your share of €10,000 in prizes.</p>
+            <a href={AFFILIATE_LINK} class="btn-promo" target="_blank">Participate</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Payments -->
+      <section id="payments" class="payments-section">
+        <h2>Payments & Withdrawals</h2>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Method</th>
+                <th>Min. Deposit</th>
+                <th>Min. Withdrawal</th>
+                <th>Processing Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Visa/Mastercard</td>
+                <td>€10</td>
+                <td>€20</td>
+                <td>1-3 days</td>
+              </tr>
+              <tr>
+                <td>PayPal</td>
+                <td>€10</td>
+                <td>€10</td>
+                <td>Instant</td>
+              </tr>
+              <tr>
+                <td>Bank Transfer</td>
+                <td>€20</td>
+                <td>€50</td>
+                <td>3-5 days</td>
+              </tr>
+              <tr>
+                <td>Cryptocurrencies</td>
+                <td>€15</td>
+                <td>€25</td>
+                <td>15 minutes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Bonus Guide -->
+      <section class="bonus-guide-section">
+        <h2>Step-by-Step Bonus Guide</h2>
+        <div class="guide-steps">
+          <div class="guide-step">
+            <div class="step-number">1</div>
+            <h3>Registration</h3>
+            <p>Create your Pandido Casino account in just a few minutes with your personal information.</p>
+          </div>
+          <div class="guide-step">
+            <div class="step-number">2</div>
+            <h3>First Deposit</h3>
+            <p>Make your first deposit of at least €10 to automatically activate your 200% bonus.</p>
+          </div>
+          <div class="guide-step">
+            <div class="step-number">3</div>
+            <h3>Play & Win</h3>
+            <p>Your bonus is credited instantly. Start playing on over 1800 available games.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Review Section -->
+      <section class="review-section">
+        <h2>Detailed Review</h2>
+        <div class="review-content">
+          <div class="review-block">
+            <h3>Casino Overview</h3>
+            <p>
+              Pandido Casino has established itself as a reference in the online gaming world since its launch. This modern platform offers an exceptional gaming experience with over 1800 carefully selected titles from the world's best developers. The intuitive and responsive interface ensures smooth navigation on all devices, while bank-level security protects every transaction.
+            </p>
+            <p>
+              The casino stands out for its generosity with a welcome bonus reaching 200% up to €5,000, accompanied by regular promotions to retain its clientele. The multilingual customer service available 24/7 ensures responsive support via live chat, email, and phone. Withdrawals are processed quickly, often within 24 hours for electronic methods.
+            </p>
+            <p>
+              Pandido Casino holds an official license and strictly complies with responsible gaming regulations. The platform offers parental control tools, customizable deposit limits, and links to organizations helping compulsive gamblers. This responsible approach, combined with a varied game library and attractive bonuses, makes Pandido Casino a preferred choice for demanding players.
+            </p>
+          </div>
+
+          <div class="review-block">
+            <h3>Bonus Terms</h3>
+            <p>
+              Pandido Casino's welcome bonus offers 200% of your first deposit amount, capped at €5,000. This exceptional offer is automatically activated on your first transaction of at least €10. Bonus funds are credited instantly to your account and can be used across the entire game library.
+            </p>
+            
+            <h4>Main wagering requirements:</h4>
+            <ul>
+              <li>Wagering requirement: 35x the bonus amount received</li>
+              <li>Time limit to meet requirements: 30 calendar days</li>
+              <li>Maximum bet allowed: €5 per spin with bonus funds</li>
+              <li>Excluded games: live poker, baccarat, and certain progressive slot machines</li>
+            </ul>
+
+            <h4>Game contribution to wagering requirements:</h4>
+            <div class="contribution-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Game Type</th>
+                    <th>Contribution</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Slot machines</td>
+                    <td>100%</td>
+                  </tr>
+                  <tr>
+                    <td>European roulette</td>
+                    <td>50%</td>
+                  </tr>
+                  <tr>
+                    <td>Blackjack</td>
+                    <td>25%</td>
+                  </tr>
+                  <tr>
+                    <td>Live games</td>
+                    <td>10%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="important-note">
+              <strong>Important:</strong> Withdrawals are only possible after fully meeting the wagering requirements. Any breach of the rules may result in cancellation of the bonus and associated winnings.
+            </p>
+          </div>
+
+          <div class="review-block">
+            <h3>Game Providers</h3>
+            <div class="providers">
+              <span>NetEnt</span>
+              <span>Microgaming</span>
+              <span>Play'n GO</span>
+              <span>Evolution Gaming</span>
+              <span>Pragmatic Play</span>
+              <span>Yggdrasil</span>
+              <span>Red Tiger</span>
+              <span>Big Time Gaming</span>
+              <span>Quickspin</span>
+              <span>Thunderkick</span>
+              <span>Nolimit City</span>
+              <span>Push Gaming</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>How to claim the 200% welcome bonus?</h3>
+            <p>
+              The welcome bonus is automatically activated on your first deposit of at least €10. No promo code is required. The 200% bonus will be credited instantly to your account, up to a maximum of €5,000.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>What are the withdrawal times at Pandido Casino?</h3>
+            <p>
+              Withdrawals via electronic wallets (PayPal, Skrill) are processed in less than 24 hours. Bank transfers take 3-5 business days, while cryptocurrencies are processed within 15 minutes maximum.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Is Pandido Casino legal?</h3>
+            <p>
+              Yes, Pandido Casino holds an official license and complies with all online gaming regulations. The platform is regularly audited to ensure game fairness and player security.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Can I play on mobile?</h3>
+            <p>
+              Absolutely! Pandido Casino offers an optimized mobile version accessible via your browser. All games and features are available on smartphone and tablet, with no app download required.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>What are the bonus wagering requirements?</h3>
+            <p>
+              The bonus must be wagered 35 times before you can make a withdrawal. You have 30 days to meet these requirements. Slot machines contribute 100%, roulette 50%, and blackjack 25%.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>Is customer service available in English?</h3>
+            <p>
+              Yes, our English-speaking customer support team is available 24/7 via live chat, email (support@pandido.com) and phone. We guarantee a quick and personalized response to all your questions.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h3>How to join the VIP Club?</h3>
+            <p>
+              The VIP Club operates on invitation only, based on your gaming activity. VIP members benefit from exclusive bonuses, a dedicated account manager, priority withdrawals, and weekly cashback up to 15%.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
+

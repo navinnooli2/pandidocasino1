@@ -1,24 +1,45 @@
 ---
 import { CASINO_CONFIG } from '../consts';
+
+const currentLang = Astro.props.currentLang || 'fr';
+const basePath = currentLang === 'en' ? '/en' : '';
+const isEnglish = currentLang === 'en';
 ---
 
 <header>
   <nav>
     <div class="logo">
-      <a href="/">
+      <a href={basePath || '/'}>
         <img src="https://res.cloudinary.com/dzwk5oovk/image/upload/v1764931760/Pandido-Casino-Review_uqtsoy.png" alt="Pandido Casino" />
       </a>
     </div>
     <div class="nav-links">
-      <a href="/paiements">Paiements</a>
-      <a href="/bonus">Bonus</a>
-      <a href="/sports">Sports</a>
-      <a href="/live-casino">Live Casino</a>
-      <a href="/slots">Slots</a>
+      <a href={`${basePath}/paiements`}>{isEnglish ? 'Payments' : 'Paiements'}</a>
+      <a href={`${basePath}/bonus`}>Bonus</a>
+      <a href={`${basePath}/sports`}>Sports</a>
+      <a href={`${basePath}/live-casino`}>Live Casino</a>
+      <a href={`${basePath}/slots`}>Slots</a>
     </div>
     <div class="nav-actions">
-      <a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">Jouer Maintenant</a>
-      <a href={CASINO_CONFIG.affiliateLink} class="btn-secondary" target="_blank">Connexion</a>
+      <div class="language-selector">
+        <button class="lang-toggle" aria-label="Select language" aria-expanded="false">
+          <span class="flag">{currentLang === 'en' ? '🇬🇧' : '🇫🇷'}</span>
+          <span class="lang-code">{currentLang.toUpperCase()}</span>
+          <span class="arrow">▼</span>
+        </button>
+        <div class="lang-dropdown">
+          <a href="/" class="lang-option" hreflang="fr">
+            <span class="flag">🇫🇷</span>
+            <span>Français</span>
+          </a>
+          <a href="/en/" class="lang-option" hreflang="en">
+            <span class="flag">🇬🇧</span>
+            <span>English</span>
+          </a>
+        </div>
+      </div>
+      <a href={CASINO_CONFIG.affiliateLink} class="btn-primary" target="_blank">{isEnglish ? 'Play Now' : 'Jouer Maintenant'}</a>
+      <a href={CASINO_CONFIG.affiliateLink} class="btn-secondary" target="_blank">{isEnglish ? 'Login' : 'Connexion'}</a>
     </div>
     <button class="mobile-menu-toggle" aria-label="Toggle menu">
       <span></span>
@@ -111,6 +132,94 @@ import { CASINO_CONFIG } from '../consts';
     display: flex;
     gap: 1rem;
     align-items: center;
+  }
+
+  .language-selector {
+    position: relative;
+  }
+
+  .lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: #d4af37;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .lang-toggle:hover {
+    background: rgba(212, 175, 55, 0.2);
+    border-color: rgba(212, 175, 55, 0.5);
+  }
+
+  .lang-toggle .flag {
+    font-size: 1.2rem;
+  }
+
+  .lang-toggle .lang-code {
+    font-weight: 600;
+  }
+
+  .lang-toggle .arrow {
+    font-size: 0.7rem;
+    transition: transform 0.3s ease;
+  }
+
+  .lang-toggle[aria-expanded="true"] .arrow {
+    transform: rotate(180deg);
+  }
+
+  .lang-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    background: rgba(10, 10, 15, 0.98);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.2);
+    min-width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+  }
+
+  .language-selector:hover .lang-dropdown,
+  .language-selector.active .lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .lang-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  }
+
+  .lang-option:last-child {
+    border-bottom: none;
+  }
+
+  .lang-option:hover {
+    background: rgba(212, 175, 55, 0.1);
+    color: #f4d03f;
+  }
+
+  .lang-option .flag {
+    font-size: 1.3rem;
   }
 
   .btn-primary,
@@ -212,6 +321,16 @@ import { CASINO_CONFIG } from '../consts';
       display: none;
     }
 
+    .language-selector {
+      width: 100%;
+    }
+
+    .lang-dropdown {
+      position: static;
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
     .mobile-menu-toggle {
       display: flex;
     }
@@ -258,11 +377,30 @@ import { CASINO_CONFIG } from '../consts';
     const toggle = document.querySelector('.mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     const navActions = document.querySelector('.nav-actions');
+    const langToggle = document.querySelector('.lang-toggle');
     
     if (toggle) {
       toggle.addEventListener('click', () => {
         navLinks?.classList.toggle('mobile-open');
         navActions?.classList.toggle('mobile-open');
+      });
+    }
+
+    if (langToggle) {
+      const languageSelector = langToggle.closest('.language-selector');
+      
+      langToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isExpanded = langToggle.getAttribute('aria-expanded') === 'true';
+        langToggle.setAttribute('aria-expanded', (!isExpanded).toString());
+        languageSelector?.classList.toggle('active');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (languageSelector && !languageSelector.contains(e.target as Node)) {
+          langToggle.setAttribute('aria-expanded', 'false');
+          languageSelector.classList.remove('active');
+        }
       });
     }
   });
